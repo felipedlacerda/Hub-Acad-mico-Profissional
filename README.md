@@ -1,60 +1,60 @@
 <div align="center">
 
-# 🩺 Hub Acadêmico & Profissional
+# Felipe de Lacerda Pereira, MD
 
-### Medicina • Oncologia • Tecnologia • Inteligência Artificial • Genômica
-
-<br>
-
-![Medicine](https://img.shields.io/badge/Medicine-0A84FF?style=for-the-badge&logo=medrt&logoColor=white)
-![Oncology](https://img.shields.io/badge/Oncology-38BDF8?style=for-the-badge&logoColor=white)
-![Artificial Intelligence](https://img.shields.io/badge/Artificial%20Intelligence-111827?style=for-the-badge&logo=openai&logoColor=white)
-![Genomics](https://img.shields.io/badge/Genomics-0284C7?style=for-the-badge&logoColor=white)
+### 🩺 Medicina · 🎗️ Oncologia · 🧬 Genômica · 🤖 Inteligência Artificial
 
 <br>
 
-**Portfólio acadêmico, profissional e tecnológico dedicado à integração entre Medicina, Ciência e Tecnologia.**
+![Clinical Medicine](https://img.shields.io/badge/CLINICAL_MEDICINE-0EA5E9?style=for-the-badge&logoColor=white)
+![Oncology](https://img.shields.io/badge/ONCOLOGY-111827?style=for-the-badge&logoColor=white)
+![AI](https://img.shields.io/badge/AI_IN_HEALTHCARE-38BDF8?style=for-the-badge&logo=openai&logoColor=white)
+![Research](https://img.shields.io/badge/RESEARCH-111827?style=for-the-badge&logoColor=white)
+
+<br>
+
+**Médico · Especialista em Clínica Médica · Pesquisador · Tecnologia em Saúde**
+
+*Construindo uma trajetória na interface entre medicina, oncologia, ciência e tecnologia.*
 
 </div>
 
 ---
 
-## 👨‍⚕️ Sobre mim
+## 👨🏽‍⚕️ Perfil
 
-Médico graduado pelo **Centro Universitário de Brasília (UniCEUB)** em 2022 e especialista em **Clínica Médica pelo Hospital de Base do Distrito Federal (HBDF)** em 2026.
+Sou **Felipe de Lacerda Pereira**, médico graduado pelo **Centro Universitário de Brasília (UniCEUB)** em 2022 e especialista em **Clínica Médica pelo Hospital de Base do Distrito Federal (HBDF)**, com conclusão da residência médica em 2026.
 
-Minha trajetória acadêmica e profissional envolve diferentes áreas da medicina, com experiência e interesse particular em **Medicina Intensiva, Oncologia, Cuidados Paliativos, Docência Médica e Tecnologia aplicada à Saúde**.
+Minha trajetória profissional e acadêmica é direcionada à integração entre **assistência médica, pesquisa científica e tecnologia**, com especial interesse em **Oncologia Clínica, Medicina de Precisão, Inteligência Artificial aplicada à Saúde e Genômica**.
 
-Atualmente, busco integrar a formação médica tradicional às novas possibilidades proporcionadas pela **Inteligência Artificial, ciência de dados, genômica e medicina de precisão**.
-
-<br>
-
-### 🏥 Formação & Experiência
-
-| Área | Instituição / Experiência |
-|:---|:---|
-| 🩺 **Clínica Médica** | Hospital de Base do Distrito Federal — HBDF |
-| 🫀 **Cardiologia** | Docência em Habilidades Cardiológicas — UniRV |
-| 🧬 **Onco-Hematologia Pediátrica** | Hospital da Criança de Brasília José Alencar |
-| 🩻 **Nefrologia** | Beneficência Portuguesa de São Paulo |
-| 🎗️ **Medicina Intensiva Oncológica** | Hospital de Câncer de Barretos |
-| 🏥 **Medicina Intensiva** | Atuação em Unidade de Terapia Intensiva |
+Possuo experiência em **Medicina Intensiva**, além de formação complementar e experiências acadêmicas em Oncologia, Onco-Hematologia Pediátrica, Nefrologia, Cuidados Paliativos e Cardiologia.
 
 ---
 
-## 🔬 Produção Acadêmica & Pesquisa
+## 🏥 Formação & Experiência
 
-Meus principais interesses acadêmicos estão concentrados na interface entre:
+| Área | Instituição / Atuação |
+| :--- | :--- |
+| 🩺 **Clínica Médica** | Hospital de Base do Distrito Federal — HBDF |
+| 🏥 **Medicina Intensiva** | Unidade de Terapia Intensiva Geral |
+| 🎗️ **Medicina Intensiva Oncológica** | Hospital de Câncer de Barretos |
+| 🧬 **Onco-Hematologia Pediátrica** | Hospital da Criança de Brasília José Alencar |
+| 🩻 **Nefrologia** | Beneficência Portuguesa de São Paulo |
+| 🫀 **Docência Médica** | Habilidades de Cardiologia — Universidade de Rio Verde (UniRV) |
 
-`Oncologia` • `Cuidados Paliativos` • `Medicina Intensiva` • `Inteligência Artificial` • `Saúde Digital`
+---
 
-### 📄 Publicação em destaque
+## 🔬 Pesquisa & Produção Científica
 
-> ### Beyond Prognosis: Identity, Meaning, and Existential Uncertainty After Severe Brain Injury
->
-> **Palliative & Supportive Care — Cambridge University Press**
->
-> Trabalho relacionado às dimensões de identidade, significado e incerteza existencial após lesão cerebral grave.
+Minha produção acadêmica concentra-se principalmente na interface entre **medicina clínica, oncologia, cuidados paliativos e inovação tecnológica**.
+
+### Publicação em destaque
+
+> **Beyond Prognosis: Identity, Meaning, and Existential Uncertainty After Severe Brain Injury**
+
+**Palliative & Supportive Care** · Cambridge University Press
+
+`Palliative Care` `Neurology` `Bioethics` `Patient-Centered Care`
 
 <br>
 
@@ -64,27 +64,109 @@ Meus principais interesses acadêmicos estão concentrados na interface entre:
 
 Centro Universitário de Brasília — **UniCEUB**
 
+Pesquisa envolvendo **espectrometria de massas, lipidômica e ciências forenses**.
+
 ---
 
-## 💻 Medicina × Tecnologia
+## 🧬 Medicina de Precisão & Inteligência Artificial
+
+Meu principal interesse tecnológico está na aplicação de ferramentas computacionais a problemas clinicamente relevantes.
 
 <div align="center">
 
-### Transformando dados em conhecimento e conhecimento em cuidado.
+**DADOS CLÍNICOS**  
+↓  
+**INTELIGÊNCIA ARTIFICIAL + GENÔMICA**  
+↓  
+**ESTRATIFICAÇÃO & PREDIÇÃO**  
+↓  
+**DECISÃO CLÍNICA**  
+↓  
+**MEDICINA PERSONALIZADA**
 
 </div>
 
-Tenho especial interesse no desenvolvimento e aplicação de tecnologias capazes de ampliar a capacidade de **pesquisa, diagnóstico, prognóstico e tomada de decisão clínica**.
+<br>
 
-```text
-MEDICINA
-   │
-   ├── Inteligência Artificial
-   ├── Ciência de Dados
-   ├── Genômica
-   ├── Bioinformática
-   ├── Pesquisa Clínica
-   └── Medicina de Precisão
-          │
-          ▼
-     Cuidado Personalizado
+Áreas de especial interesse:
+
+- 🤖 **Inteligência Artificial aplicada à Medicina**
+- 🧠 **Machine Learning e modelos preditivos**
+- 🧬 **Genômica e Bioinformática**
+- 🎗️ **Oncologia de Precisão**
+- 📊 **Ciência e análise de dados**
+- 🏥 **Clinical Decision Support Systems**
+- 🔬 **Pesquisa clínica e translacional**
+- 🐍 **Python aplicado à pesquisa biomédica**
+
+---
+
+## 💻 Tecnologia
+
+<div align="center">
+
+![Python](https://img.shields.io/badge/Python-111827?style=for-the-badge&logo=python&logoColor=38BDF8)
+![Git](https://img.shields.io/badge/Git-111827?style=for-the-badge&logo=git&logoColor=38BDF8)
+![GitHub](https://img.shields.io/badge/GitHub-111827?style=for-the-badge&logo=github&logoColor=white)
+![AI](https://img.shields.io/badge/Artificial_Intelligence-0284C7?style=for-the-badge&logo=openai&logoColor=white)
+![Data](https://img.shields.io/badge/Data_Science-38BDF8?style=for-the-badge&logoColor=111827)
+
+</div>
+
+<br>
+
+Atualmente, também desenvolvo formação em **Engenharia de Software**, ampliando conhecimentos em programação, desenvolvimento de sistemas e fundamentos computacionais aplicáveis à saúde.
+
+---
+
+## 🎓 Formação Complementar
+
+`Genômica` · `ACLS` · `ATLS` · `Python` · `Inteligência Artificial`
+
+---
+
+## 🌎 Idiomas
+
+| Idioma | Nível |
+| :--- | :--- |
+| 🇺🇸 **English** | Advanced |
+| 🇨🇳 **Mandarin Chinese** | In progress |
+
+---
+
+## 🎯 Current Focus
+
+Atualmente, minha trajetória está direcionada à **Oncologia Clínica**, com especial interesse na convergência entre oncologia, pesquisa translacional, genômica e novas tecnologias.
+
+<div align="center">
+
+### Clinical Medicine → Oncology → Precision Medicine
+
+**Medicine × Science × Technology**
+
+</div>
+
+O objetivo é contribuir para o desenvolvimento de pesquisas e soluções capazes de transformar dados clínicos e moleculares em **decisões médicas mais precisas, individualizadas e baseadas em evidências**.
+
+---
+
+<div align="center">
+
+## Research Interests
+
+![Oncology](https://img.shields.io/badge/ONCOLOGY-0284C7?style=flat-square)
+![Precision Medicine](https://img.shields.io/badge/PRECISION_MEDICINE-111827?style=flat-square)
+![AI](https://img.shields.io/badge/AI_IN_HEALTHCARE-38BDF8?style=flat-square)
+![Genomics](https://img.shields.io/badge/GENOMICS-0284C7?style=flat-square)
+![Clinical Research](https://img.shields.io/badge/CLINICAL_RESEARCH-111827?style=flat-square)
+![Palliative Care](https://img.shields.io/badge/PALLIATIVE_CARE-38BDF8?style=flat-square)
+
+<br><br>
+
+### Felipe de Lacerda Pereira
+
+**Physician · Clinical Medicine · Oncology · Research · Technology**
+
+<sub>Brasília, Brazil</sub>
+
+</div>
