@@ -1,1 +1,3562 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
 
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="theme-color"
+        content="#050608"
+    >
+
+    <meta
+        name="description"
+        content="Hub acadêmico e profissional de Dr. Felipe de Lacerda Pereira — Medicina, Tecnologia, Engenharia de Software, Projetos, Pesquisa, Certificados e Idiomas."
+    >
+
+    <title>
+        Dr. Felipe de Lacerda Pereira | Hub Acadêmico
+    </title>
+
+
+    <style>
+
+        /* =========================================================
+           RESET
+        ========================================================= */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px;
+        }
+
+
+        body {
+            background: #050608;
+            color: #f4f7fa;
+
+            font-family:
+                Inter,
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Helvetica,
+                Arial,
+                sans-serif;
+
+            overflow-x: hidden;
+
+            min-width: 320px;
+        }
+
+
+        img,
+        svg {
+            max-width: 100%;
+        }
+
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+
+        button {
+            font: inherit;
+        }
+
+
+        /* =========================================================
+           VARIÁVEIS
+        ========================================================= */
+
+        :root {
+
+            --black: #050608;
+            --black-2: #0b0e12;
+
+            --white: #f4f7fa;
+
+            --gray: #8d98a5;
+            --gray-light: #c4ccd4;
+
+            --blue: #73d7ff;
+            --blue-soft: #b8edff;
+
+            --line: rgba(255, 255, 255, 0.09);
+
+            --blue-line:
+                rgba(115, 215, 255, 0.25);
+        }
+
+
+        /* =========================================================
+           FUNDO TECNOLÓGICO
+        ========================================================= */
+
+        body::before {
+
+            content: "";
+
+            position: fixed;
+
+            inset: 0;
+
+            background-image:
+
+                linear-gradient(
+                    rgba(115, 215, 255, 0.035) 1px,
+                    transparent 1px
+                ),
+
+                linear-gradient(
+                    90deg,
+                    rgba(115, 215, 255, 0.035) 1px,
+                    transparent 1px
+                );
+
+            background-size: 55px 55px;
+
+            pointer-events: none;
+
+            z-index: -2;
+        }
+
+
+        body::after {
+
+            content: "";
+
+            position: fixed;
+
+            width: 600px;
+            height: 600px;
+
+            right: -250px;
+            top: 10%;
+
+            background:
+                rgba(115, 215, 255, 0.08);
+
+            filter: blur(120px);
+
+            border-radius: 50%;
+
+            pointer-events: none;
+
+            z-index: -1;
+        }
+
+
+        /* =========================================================
+           CONTAINER
+        ========================================================= */
+
+        .container {
+
+            width:
+                min(1200px, 90%);
+
+            margin:
+                0 auto;
+        }
+
+
+        /* =========================================================
+           HEADER
+        ========================================================= */
+
+        header {
+
+            position: fixed;
+
+            top: 0;
+            left: 0;
+            right: 0;
+
+            z-index: 1000;
+
+            background:
+                rgba(5, 6, 8, 0.82);
+
+            backdrop-filter:
+                blur(18px);
+
+            -webkit-backdrop-filter:
+                blur(18px);
+
+            border-bottom:
+                1px solid var(--line);
+        }
+
+
+        .nav {
+
+            min-height: 76px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+        }
+
+
+        /* =========================================================
+           LOGO
+        ========================================================= */
+
+        .logo {
+
+            font-size:
+                clamp(1.1rem, 3vw, 1.3rem);
+
+            font-weight: 800;
+
+            letter-spacing:
+                -0.04em;
+
+            color: var(--white);
+
+            flex-shrink: 0;
+        }
+
+
+        .logo span {
+            color: var(--blue);
+        }
+
+
+        /* =========================================================
+           MENU DESKTOP
+        ========================================================= */
+
+        nav {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 30px;
+        }
+
+
+        nav a {
+
+            position: relative;
+
+            color:
+                var(--gray-light);
+
+            font-size: 0.75rem;
+
+            text-transform:
+                uppercase;
+
+            letter-spacing:
+                0.12em;
+
+            padding:
+                10px 0;
+
+            transition:
+                color 0.25s ease;
+        }
+
+
+        nav a::after {
+
+            content: "";
+
+            position: absolute;
+
+            left: 0;
+            bottom: 3px;
+
+            width: 0;
+            height: 1px;
+
+            background:
+                var(--blue);
+
+            transition:
+                width 0.25s ease;
+        }
+
+
+        nav a:hover {
+            color: var(--blue);
+        }
+
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+
+        /* =========================================================
+           MENU MOBILE
+        ========================================================= */
+
+        .menu-toggle {
+
+            display: none;
+
+            width: 44px;
+            height: 44px;
+
+            border:
+                1px solid var(--line);
+
+            background:
+                rgba(255,255,255,0.03);
+
+            color:
+                var(--white);
+
+            cursor: pointer;
+
+            align-items: center;
+            justify-content: center;
+
+            flex-direction: column;
+
+            gap: 5px;
+
+            border-radius: 4px;
+
+            transition:
+                0.25s ease;
+        }
+
+
+        .menu-toggle span {
+
+            width: 19px;
+            height: 1px;
+
+            background:
+                var(--blue);
+
+            transition:
+                0.25s ease;
+        }
+
+
+        .menu-toggle:hover {
+
+            border-color:
+                var(--blue);
+        }
+
+
+        .menu-toggle.active
+        span:nth-child(1) {
+
+            transform:
+                translateY(6px)
+                rotate(45deg);
+        }
+
+
+        .menu-toggle.active
+        span:nth-child(2) {
+
+            opacity: 0;
+        }
+
+
+        .menu-toggle.active
+        span:nth-child(3) {
+
+            transform:
+                translateY(-6px)
+                rotate(-45deg);
+        }
+
+
+        /* =========================================================
+           HERO
+        ========================================================= */
+
+        .hero {
+
+            min-height:
+                100svh;
+
+            min-height:
+                100vh;
+
+            display: grid;
+
+            grid-template-columns:
+                minmax(0, 1.618fr)
+                minmax(280px, 1fr);
+
+            gap:
+                clamp(30px, 6vw, 80px);
+
+            align-items: center;
+
+            padding-top:
+                clamp(100px, 12vh, 140px);
+
+            padding-bottom:
+                70px;
+        }
+
+
+        .hero > div:first-child {
+            min-width: 0;
+        }
+
+
+        .eyebrow {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            gap: 10px;
+
+            color:
+                var(--blue);
+
+            font-size:
+                clamp(0.62rem, 1.5vw, 0.72rem);
+
+            letter-spacing:
+                0.2em;
+
+            text-transform:
+                uppercase;
+
+            margin-bottom:
+                25px;
+        }
+
+
+        .eyebrow::before {
+
+            content: "";
+
+            width: 30px;
+            height: 1px;
+
+            background:
+                var(--blue);
+
+            flex-shrink: 0;
+        }
+
+
+        h1 {
+
+            font-size:
+                clamp(
+                    3rem,
+                    7vw,
+                    6.5rem
+                );
+
+            line-height:
+                0.95;
+
+            letter-spacing:
+                -0.065em;
+
+            max-width:
+                850px;
+
+            overflow-wrap:
+                break-word;
+        }
+
+
+        h1 span {
+            color: var(--blue);
+        }
+
+
+        .hero-description {
+
+            max-width:
+                650px;
+
+            color:
+                var(--gray);
+
+            font-size:
+                clamp(
+                    0.95rem,
+                    2vw,
+                    1.05rem
+                );
+
+            line-height:
+                1.8;
+
+            margin-top:
+                30px;
+        }
+
+
+        .hero-description strong {
+            color: var(--gray-light);
+        }
+
+
+        .hero-actions {
+
+            display: flex;
+
+            gap: 14px;
+
+            margin-top: 35px;
+
+            flex-wrap: wrap;
+        }
+
+
+        /* =========================================================
+           BOTÕES
+        ========================================================= */
+
+        .button {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            min-height: 48px;
+
+            padding:
+                14px 22px;
+
+            border:
+                1px solid var(--line);
+
+            background:
+                rgba(255,255,255,0.025);
+
+            color:
+                var(--white);
+
+            font-size:
+                0.72rem;
+
+            text-transform:
+                uppercase;
+
+            letter-spacing:
+                0.12em;
+
+            transition:
+                0.3s ease;
+
+            cursor: pointer;
+
+            touch-action:
+                manipulation;
+        }
+
+
+        .button.primary {
+
+            background:
+                var(--blue);
+
+            color:
+                #031017;
+
+            border-color:
+                var(--blue);
+
+            font-weight:
+                700;
+        }
+
+
+        .button:hover {
+
+            transform:
+                translateY(-3px);
+
+            border-color:
+                var(--blue);
+
+            box-shadow:
+                0 12px 40px
+                rgba(115,215,255,0.12);
+        }
+
+
+        /* =========================================================
+           VISUAL
+        ========================================================= */
+
+        .visual {
+
+            position: relative;
+
+            width: 100%;
+
+            aspect-ratio: 1 / 1;
+
+            display: grid;
+
+            place-items: center;
+
+            transition:
+                transform 0.25s ease-out;
+
+            min-width: 0;
+        }
+
+
+        /* =========================================================
+           ORBE
+        ========================================================= */
+
+        .orb {
+
+            width:
+                min(65%, 420px);
+
+            aspect-ratio:
+                1 / 1;
+
+            border-radius:
+                50%;
+
+            border:
+                1px solid
+                rgba(115,215,255,0.4);
+
+            box-shadow:
+
+                0 0 100px
+                rgba(115,215,255,0.12),
+
+                inset 0 0 70px
+                rgba(115,215,255,0.05);
+
+            position:
+                relative;
+
+            animation:
+                orbPulse 5s
+                ease-in-out
+                infinite;
+        }
+
+
+        .orb::before {
+
+            content: "";
+
+            position: absolute;
+
+            inset: 12%;
+
+            border-radius:
+                50%;
+
+            border:
+                1px solid
+                rgba(255,255,255,0.08);
+        }
+
+
+        .orb::after {
+
+            content: "";
+
+            position: absolute;
+
+            width: 8px;
+            height: 8px;
+
+            border-radius:
+                50%;
+
+            background:
+                var(--blue);
+
+            box-shadow:
+                0 0 20px
+                var(--blue);
+
+            top: 14%;
+            right: 19%;
+
+            animation:
+                pulseDot 2s
+                ease-in-out
+                infinite;
+        }
+
+
+        @keyframes orbPulse {
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.025);
+            }
+        }
+
+
+        @keyframes pulseDot {
+
+            0%,
+            100% {
+                opacity: 0.5;
+            }
+
+            50% {
+                opacity: 1;
+            }
+        }
+
+
+        /* =========================================================
+           ECG
+        ========================================================= */
+
+        .ecg-wrapper {
+
+            position: absolute;
+
+            z-index: 10;
+
+            width: 115%;
+
+            max-width: 720px;
+
+            height: 280px;
+
+            left: 50%;
+            top: 50%;
+
+            transform:
+                translate(-50%, -50%);
+
+            overflow: hidden;
+
+            border:
+                1px solid
+                rgba(115, 215, 255, 0.20);
+
+            border-radius: 18px;
+
+            background:
+
+                linear-gradient(
+                    rgba(115, 215, 255, 0.045) 1px,
+                    transparent 1px
+                ),
+
+                linear-gradient(
+                    90deg,
+                    rgba(115, 215, 255, 0.045) 1px,
+                    transparent 1px
+                );
+
+            background-size:
+                20px 20px;
+
+            box-shadow:
+
+                inset 0 0 50px
+                rgba(115, 215, 255, 0.04),
+
+                0 0 40px
+                rgba(115, 215, 255, 0.08);
+        }
+
+
+        /* =========================================================
+           SVG ECG
+        ========================================================= */
+
+        .ecg {
+
+            position: absolute;
+
+            width: 100%;
+            height: 100%;
+
+            left: 0;
+            top: 0;
+
+            overflow: visible;
+        }
+
+
+        /* =========================================================
+           GRADE
+        ========================================================= */
+
+        .ecg-grid {
+
+            fill: none;
+
+            stroke:
+                rgba(115, 215, 255, 0.09);
+
+            stroke-width: 1;
+        }
+
+
+        /* =========================================================
+           TRAÇADO PRINCIPAL
+        ========================================================= */
+
+        .ecg-line {
+
+            fill: none;
+
+            stroke:
+                #73d7ff;
+
+            stroke-width: 4;
+
+            stroke-linecap: round;
+
+            stroke-linejoin: round;
+
+            filter:
+
+                drop-shadow(
+                    0 0 4px
+                    #73d7ff
+                )
+
+                drop-shadow(
+                    0 0 12px
+                    rgba(115, 215, 255, 0.75)
+                );
+
+            opacity: 0.95;
+        }
+
+
+        /* =========================================================
+           TRAÇADO ANIMADO
+        ========================================================= */
+
+        .ecg-animation {
+
+            fill: none;
+
+            stroke:
+                #ffffff;
+
+            stroke-width: 2;
+
+            stroke-linecap: round;
+
+            stroke-linejoin: round;
+
+            stroke-dasharray:
+                110 1890;
+
+            stroke-dashoffset: 0;
+
+            filter:
+                drop-shadow(
+                    0 0 5px
+                    #73d7ff
+                );
+
+            animation:
+                ecgScanner 4s
+                linear
+                infinite;
+        }
+
+
+        @keyframes ecgScanner {
+
+            from {
+                stroke-dashoffset: 0;
+            }
+
+            to {
+                stroke-dashoffset: -2000;
+            }
+        }
+
+
+        /* =========================================================
+           LINHA DE VARREDURA
+        ========================================================= */
+
+        .ecg-scan {
+
+            position: absolute;
+
+            top: 0;
+            bottom: 0;
+
+            width: 2px;
+
+            background:
+
+                linear-gradient(
+                    to bottom,
+                    transparent,
+                    #73d7ff,
+                    transparent
+                );
+
+            box-shadow:
+
+                0 0 12px
+                #73d7ff,
+
+                0 0 25px
+                rgba(115, 215, 255, 0.7);
+
+            animation:
+                scanECG 4s
+                linear
+                infinite;
+
+            pointer-events:
+                none;
+        }
+
+
+        @keyframes scanECG {
+
+            0% {
+                left: -2%;
+            }
+
+            100% {
+                left: 102%;
+            }
+        }
+
+
+        /* =========================================================
+           FREQUÊNCIA CARDÍACA
+        ========================================================= */
+
+        .heart-rate {
+
+            position: absolute;
+
+            top: 18px;
+            right: 22px;
+
+            z-index: 20;
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 7px;
+
+            color:
+                var(--blue);
+
+            font-family:
+                monospace;
+        }
+
+
+        .heart-dot {
+
+            width: 8px;
+            height: 8px;
+
+            border-radius: 50%;
+
+            background:
+                var(--blue);
+
+            box-shadow:
+
+                0 0 6px
+                var(--blue),
+
+                0 0 15px
+                var(--blue);
+
+            animation:
+                heartBeat 0.83s
+                infinite;
+        }
+
+
+        @keyframes heartBeat {
+
+            0%,
+            100% {
+                transform: scale(0.8);
+                opacity: 0.6;
+            }
+
+            15% {
+                transform: scale(1.4);
+                opacity: 1;
+            }
+
+            30% {
+                transform: scale(0.8);
+                opacity: 0.6;
+            }
+        }
+
+
+        .heart-rate-label {
+
+            font-size:
+                9px;
+
+            letter-spacing:
+                0.15em;
+
+            opacity:
+                0.7;
+        }
+
+
+        .heart-rate strong {
+
+            font-size:
+                22px;
+
+            font-weight:
+                500;
+        }
+
+
+        .heart-rate small {
+
+            font-size:
+                9px;
+
+            opacity:
+                0.6;
+        }
+
+
+        /* =========================================================
+           LABELS P / QRS / T
+        ========================================================= */
+
+        .ecg-label {
+
+            position: absolute;
+
+            z-index: 20;
+
+            color:
+                var(--blue);
+
+            font-family:
+                monospace;
+
+            font-size:
+                11px;
+
+            font-weight:
+                bold;
+
+            letter-spacing:
+                0.1em;
+
+            text-shadow:
+                0 0 8px
+                rgba(115, 215, 255, 0.8);
+
+            pointer-events:
+                none;
+        }
+
+
+        .label-p {
+
+            left:
+                17%;
+
+            top:
+                38%;
+        }
+
+
+        .label-qrs {
+
+            left:
+                26%;
+
+            top:
+                18%;
+        }
+
+
+        .label-t {
+
+            left:
+                42%;
+
+            top:
+                31%;
+        }
+
+
+        /* =========================================================
+           SEÇÕES
+        ========================================================= */
+
+        section {
+
+            padding:
+                clamp(80px, 12vw, 120px)
+                0;
+        }
+
+
+        .section-label {
+
+            color:
+                var(--blue);
+
+            font-size:
+                0.7rem;
+
+            text-transform:
+                uppercase;
+
+            letter-spacing:
+                0.2em;
+
+            margin-bottom:
+                18px;
+        }
+
+
+        .section-title {
+
+            font-size:
+                clamp(
+                    2rem,
+                    5vw,
+                    4rem
+                );
+
+            letter-spacing:
+                -0.05em;
+
+            line-height:
+                1;
+
+            overflow-wrap:
+                break-word;
+        }
+
+
+        .section-intro {
+
+            max-width:
+                700px;
+
+            color:
+                var(--gray);
+
+            line-height:
+                1.8;
+
+            margin-top:
+                20px;
+
+            font-size:
+                clamp(
+                    0.9rem,
+                    2vw,
+                    1rem
+                );
+        }
+
+
+        /* =========================================================
+           MEDICINA × TECNOLOGIA
+        ========================================================= */
+
+        .connection {
+
+            margin-top:
+                60px;
+
+            display:
+                grid;
+
+            grid-template-columns:
+                1fr 1fr;
+
+            border-top:
+                1px solid var(--line);
+
+            border-bottom:
+                1px solid var(--line);
+        }
+
+
+        .connection-box {
+
+            padding:
+                clamp(28px, 5vw, 45px);
+
+            min-height:
+                260px;
+        }
+
+
+        .connection-box
+        + .connection-box {
+
+            border-left:
+                1px solid var(--line);
+        }
+
+
+        .connection-box h3 {
+
+            font-size:
+                clamp(
+                    1.2rem,
+                    3vw,
+                    1.4rem
+                );
+
+            margin-bottom:
+                15px;
+        }
+
+
+        .connection-box p {
+
+            color:
+                var(--gray);
+
+            line-height:
+                1.8;
+
+            font-size:
+                0.95rem;
+        }
+
+
+        /* =========================================================
+           HUB
+        ========================================================= */
+
+        .hub-grid {
+
+            margin-top:
+                60px;
+
+            display:
+                grid;
+
+            grid-template-columns:
+                repeat(2, minmax(0, 1fr));
+
+            gap:
+                16px;
+        }
+
+
+        .hub-card {
+
+            min-height:
+                230px;
+
+            padding:
+                clamp(25px, 4vw, 32px);
+
+            border:
+                1px solid var(--line);
+
+            background:
+
+                linear-gradient(
+                    135deg,
+                    rgba(255,255,255,0.035),
+                    rgba(255,255,255,0.008)
+                );
+
+            position:
+                relative;
+
+            overflow:
+                hidden;
+
+            transition:
+
+                transform 0.35s ease,
+
+                border-color 0.35s ease,
+
+                background 0.35s ease;
+
+            touch-action:
+                manipulation;
+        }
+
+
+        .hub-card::before {
+
+            content: "";
+
+            position:
+                absolute;
+
+            width:
+                150px;
+
+            height:
+                150px;
+
+            right:
+                -60px;
+
+            bottom:
+                -60px;
+
+            border-radius:
+                50%;
+
+            border:
+                1px solid
+                rgba(115,215,255,0.2);
+
+            transition:
+                0.4s ease;
+        }
+
+
+        .hub-card:hover {
+
+            transform:
+                translateY(-7px);
+
+            border-color:
+                rgba(115,215,255,0.45);
+
+            background:
+                rgba(115,215,255,0.045);
+        }
+
+
+        .hub-card:hover::before {
+
+            transform:
+                scale(1.5);
+        }
+
+
+        .card-number {
+
+            color:
+                var(--blue);
+
+            font-size:
+                0.7rem;
+
+            letter-spacing:
+                0.15em;
+
+            margin-bottom:
+                35px;
+        }
+
+
+        .hub-card h3 {
+
+            font-size:
+                clamp(
+                    1.15rem,
+                    2.5vw,
+                    1.4rem
+                );
+
+            margin-bottom:
+                12px;
+        }
+
+
+        .hub-card p {
+
+            color:
+                var(--gray);
+
+            line-height:
+                1.7;
+
+            max-width:
+                480px;
+
+            font-size:
+                0.92rem;
+        }
+
+
+        .card-arrow {
+
+            position:
+                absolute;
+
+            right:
+                30px;
+
+            bottom:
+                25px;
+
+            font-size:
+                1.3rem;
+
+            color:
+                var(--blue);
+
+            transition:
+                0.3s ease;
+        }
+
+
+        .hub-card:hover
+        .card-arrow {
+
+            transform:
+                translateX(5px);
+        }
+
+
+        /* =========================================================
+           REPOSITÓRIO
+        ========================================================= */
+
+        .repository {
+
+            margin-top:
+                60px;
+
+            border-top:
+                1px solid var(--line);
+        }
+
+
+        .repository-item {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                80px minmax(0, 1fr) auto;
+
+            gap:
+                30px;
+
+            align-items:
+                center;
+
+            padding:
+                25px 0;
+
+            border-bottom:
+                1px solid var(--line);
+
+            transition:
+                0.25s ease;
+
+            min-width:
+                0;
+
+            touch-action:
+                manipulation;
+        }
+
+
+        .repository-item:hover {
+
+            padding-left:
+                10px;
+
+            background:
+
+                linear-gradient(
+                    90deg,
+                    rgba(115,215,255,0.035),
+                    transparent
+                );
+        }
+
+
+        .repository-number {
+
+            color:
+                var(--blue);
+
+            font-family:
+                monospace;
+
+            font-size:
+                0.8rem;
+        }
+
+
+        .repository-name {
+
+            font-weight:
+                600;
+
+            overflow-wrap:
+                anywhere;
+        }
+
+
+        .repository-path {
+
+            display:
+                block;
+
+            color:
+                var(--gray);
+
+            font-size:
+                0.72rem;
+
+            margin-top:
+                5px;
+
+            overflow-wrap:
+                anywhere;
+        }
+
+
+        .repository-arrow {
+
+            color:
+                var(--blue);
+
+            font-size:
+                1.2rem;
+        }
+
+
+        /* =========================================================
+           GITHUB
+        ========================================================= */
+
+        .github-section {
+
+            text-align:
+                center;
+
+            padding-bottom:
+                150px;
+        }
+
+
+        .github-section p {
+
+            color:
+                var(--gray);
+
+            margin:
+                20px auto 35px;
+
+            max-width:
+                600px;
+
+            line-height:
+                1.8;
+        }
+
+
+        /* =========================================================
+           FOOTER
+        ========================================================= */
+
+        footer {
+
+            border-top:
+                1px solid var(--line);
+
+            padding:
+                30px 0;
+
+            color:
+                var(--gray);
+
+            font-size:
+                0.72rem;
+
+            letter-spacing:
+                0.08em;
+        }
+
+
+        .footer-content {
+
+            display:
+                flex;
+
+            justify-content:
+                space-between;
+
+            align-items:
+                center;
+
+            gap:
+                20px;
+        }
+
+
+        .footer-brand {
+
+            color:
+                var(--white);
+
+            font-weight:
+                700;
+        }
+
+
+        .footer-brand span {
+
+            color:
+                var(--blue);
+        }
+
+
+        /* =========================================================
+           ANIMAÇÕES DE SCROLL
+        ========================================================= */
+
+        .reveal {
+
+            opacity:
+                0;
+
+            transform:
+                translateY(25px);
+
+            transition:
+
+                opacity 0.8s ease,
+
+                transform 0.8s ease;
+        }
+
+
+        .reveal.visible {
+
+            opacity:
+                1;
+
+            transform:
+                translateY(0);
+        }
+
+
+        /* =========================================================
+           TABLET
+        ========================================================= */
+
+        @media (max-width: 900px) {
+
+            .container {
+
+                width:
+                    min(92%, 760px);
+            }
+
+
+            .hero {
+
+                grid-template-columns:
+                    1fr;
+
+                text-align:
+                    left;
+
+                padding-top:
+                    120px;
+            }
+
+
+            .hero-description {
+
+                max-width:
+                    720px;
+            }
+
+
+            .visual {
+
+                width:
+                    min(100%, 600px);
+
+                margin:
+                    10px auto 0;
+
+                justify-self:
+                    center;
+            }
+
+
+            .orb {
+
+                width:
+                    55%;
+            }
+
+
+            .hub-grid {
+
+                grid-template-columns:
+                    1fr 1fr;
+            }
+
+
+            nav {
+
+                gap:
+                    18px;
+            }
+
+        }
+
+
+        /* =========================================================
+           CELULAR
+        ========================================================= */
+
+        @media (max-width: 700px) {
+
+            .container {
+
+                width:
+                    90%;
+            }
+
+
+            /* HEADER */
+
+            .nav {
+
+                min-height:
+                    68px;
+            }
+
+
+            .menu-toggle {
+
+                display:
+                    flex;
+            }
+
+
+            nav {
+
+                position:
+                    absolute;
+
+                top:
+                    68px;
+
+                left:
+                    0;
+
+                right:
+                    0;
+
+                display:
+                    flex;
+
+                flex-direction:
+                    column;
+
+                gap:
+                    0;
+
+                background:
+                    rgba(5,6,8,0.97);
+
+                backdrop-filter:
+                    blur(20px);
+
+                -webkit-backdrop-filter:
+                    blur(20px);
+
+                border-bottom:
+                    1px solid var(--line);
+
+                padding:
+                    10px 5%;
+
+                transform:
+                    translateY(-20px);
+
+                opacity:
+                    0;
+
+                pointer-events:
+                    none;
+
+                transition:
+                    0.3s ease;
+            }
+
+
+            nav.open {
+
+                transform:
+                    translateY(0);
+
+                opacity:
+                    1;
+
+                pointer-events:
+                    auto;
+            }
+
+
+            nav a {
+
+                width:
+                    100%;
+
+                padding:
+                    17px 5px;
+
+                border-bottom:
+                    1px solid
+                    rgba(255,255,255,0.05);
+            }
+
+
+            nav a:last-child {
+
+                border-bottom:
+                    none;
+            }
+
+
+            nav a::after {
+                display: none;
+            }
+
+
+            /* HERO */
+
+            .hero {
+
+                min-height:
+                    auto;
+
+                padding-top:
+                    120px;
+
+                padding-bottom:
+                    60px;
+
+                gap:
+                    50px;
+            }
+
+
+            h1 {
+
+                font-size:
+                    clamp(
+                        2.8rem,
+                        13vw,
+                        4.5rem
+                    );
+            }
+
+
+            .eyebrow {
+
+                margin-bottom:
+                    20px;
+            }
+
+
+            .hero-description {
+
+                font-size:
+                    0.95rem;
+
+                line-height:
+                    1.75;
+
+                margin-top:
+                    25px;
+            }
+
+
+            .hero-actions {
+
+                width:
+                    100%;
+
+                margin-top:
+                    28px;
+            }
+
+
+            .button {
+
+                min-height:
+                    50px;
+
+                padding:
+                    13px 18px;
+
+                flex:
+                    1 1 140px;
+            }
+
+
+            /* ECG MOBILE */
+
+            .visual {
+
+                aspect-ratio:
+                    1 / 0.85;
+
+                width:
+                    100%;
+            }
+
+
+            .orb {
+
+                width:
+                    55%;
+            }
+
+
+            .ecg-wrapper {
+
+                width:
+                    115%;
+
+                max-width:
+                    none;
+
+                height:
+                    240px;
+            }
+
+
+            .ecg-line {
+
+                stroke-width:
+                    3;
+            }
+
+
+            .ecg-animation {
+
+                stroke-width:
+                    1.5;
+            }
+
+
+            .ecg-label {
+
+                display:
+                    none;
+            }
+
+
+            .heart-rate {
+
+                top:
+                    12px;
+
+                right:
+                    14px;
+            }
+
+
+            /* SEÇÕES */
+
+            section {
+
+                padding:
+                    85px 0;
+            }
+
+
+            .section-title {
+
+                font-size:
+                    clamp(
+                        2rem,
+                        10vw,
+                        3rem
+                    );
+            }
+
+
+            .section-intro {
+
+                font-size:
+                    0.92rem;
+            }
+
+
+            /* MEDICINA × TECNOLOGIA */
+
+            .connection {
+
+                grid-template-columns:
+                    1fr;
+
+                margin-top:
+                    40px;
+            }
+
+
+            .connection-box {
+
+                min-height:
+                    auto;
+
+                padding:
+                    30px 25px;
+            }
+
+
+            .connection-box
+            + .connection-box {
+
+                border-left:
+                    none;
+
+                border-top:
+                    1px solid var(--line);
+            }
+
+
+            /* HUB */
+
+            .hub-grid {
+
+                grid-template-columns:
+                    1fr;
+
+                gap:
+                    12px;
+
+                margin-top:
+                    40px;
+            }
+
+
+            .hub-card {
+
+                min-height:
+                    205px;
+
+                padding:
+                    25px;
+            }
+
+
+            .card-number {
+
+                margin-bottom:
+                    25px;
+            }
+
+
+            /* REPOSITÓRIO */
+
+            .repository {
+
+                margin-top:
+                    40px;
+            }
+
+
+            .repository-item {
+
+                grid-template-columns:
+                    40px minmax(0, 1fr) 20px;
+
+                gap:
+                    12px;
+
+                padding:
+                    22px 0;
+            }
+
+
+            .repository-number {
+
+                font-size:
+                    0.72rem;
+            }
+
+
+            .repository-name {
+
+                font-size:
+                    0.85rem;
+            }
+
+
+            .repository-path {
+
+                font-size:
+                    0.64rem;
+
+                line-height:
+                    1.5;
+            }
+
+
+            /* GITHUB */
+
+            .github-section {
+
+                padding-bottom:
+                    100px;
+            }
+
+
+            .github-section
+            .button {
+
+                width:
+                    100%;
+
+                flex:
+                    none;
+            }
+
+
+            /* FOOTER */
+
+            footer {
+
+                padding:
+                    25px 0;
+            }
+
+
+            .footer-content {
+
+                flex-direction:
+                    column;
+
+                align-items:
+                    flex-start;
+
+                gap:
+                    12px;
+
+                line-height:
+                    1.5;
+            }
+
+        }
+
+
+        /* =========================================================
+           CELULARES MUITO PEQUENOS
+        ========================================================= */
+
+        @media (max-width: 400px) {
+
+            .container {
+
+                width:
+                    88%;
+            }
+
+
+            h1 {
+
+                font-size:
+                    2.65rem;
+            }
+
+
+            .hero {
+
+                padding-top:
+                    110px;
+            }
+
+
+            .hero-actions {
+
+                flex-direction:
+                    column;
+            }
+
+
+            .button {
+
+                width:
+                    100%;
+
+                flex:
+                    none;
+            }
+
+
+            .visual {
+
+                aspect-ratio:
+                    1 / 0.9;
+            }
+
+
+            .orb {
+
+                width:
+                    52%;
+            }
+
+
+            .ecg-wrapper {
+
+                width:
+                    120%;
+
+                height:
+                    220px;
+            }
+
+
+            .hub-card {
+
+                min-height:
+                    195px;
+            }
+
+        }
+
+
+        /* =========================================================
+           TOUCH DEVICES
+        ========================================================= */
+
+        @media (hover: none) {
+
+            .hub-card:hover {
+
+                transform:
+                    none;
+            }
+
+
+            .repository-item:hover {
+
+                padding-left:
+                    0;
+
+                background:
+                    transparent;
+            }
+
+
+            .button:hover {
+
+                transform:
+                    none;
+
+                box-shadow:
+                    none;
+            }
+
+
+            .hub-card:hover::before {
+
+                transform:
+                    none;
+            }
+
+        }
+
+
+        /* =========================================================
+           ACESSIBILIDADE
+        ========================================================= */
+
+        @media (prefers-reduced-motion: reduce) {
+
+            html {
+
+                scroll-behavior:
+                    auto;
+            }
+
+
+            *,
+            *::before,
+            *::after {
+
+                animation-duration:
+                    0.01ms !important;
+
+                animation-iteration-count:
+                    1 !important;
+
+                transition-duration:
+                    0.01ms !important;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================================
+         HEADER
+    ========================================================= -->
+
+    <header>
+
+        <div class="container nav">
+
+
+            <a
+                href="#"
+                class="logo"
+                aria-label="Página inicial"
+            >
+                FL<span>.</span>
+            </a>
+
+
+            <nav id="main-nav">
+
+                <a href="#sobre">
+                    Sobre
+                </a>
+
+                <a href="#conexao">
+                    Conexão
+                </a>
+
+                <a href="#hub">
+                    Hub
+                </a>
+
+                <a href="#repositorio">
+                    Repositório
+                </a>
+
+            </nav>
+
+
+            <button
+                class="menu-toggle"
+                id="menu-toggle"
+                type="button"
+                aria-label="Abrir menu"
+                aria-expanded="false"
+                aria-controls="main-nav"
+            >
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =========================================================
+         CONTEÚDO
+    ========================================================= -->
+
+    <main>
+
+
+        <!-- =====================================================
+             HERO
+        ====================================================== -->
+
+        <section
+            class="container hero"
+            id="sobre"
+        >
+
+
+            <div>
+
+                <div class="eyebrow">
+                    Academic & Professional Hub
+                </div>
+
+
+                <h1>
+
+                    Dr. Felipe de
+                    <span>
+                        Lacerda Pereira.
+                    </span>
+
+                </h1>
+
+
+                <p class="hero-description">
+
+                    Um espaço acadêmico e profissional dedicado à
+                    integração entre
+                    <strong>Medicina</strong>,
+                    <strong>Tecnologia</strong>,
+                    <strong>Engenharia de Software</strong>,
+                    pesquisa e desenvolvimento.
+
+                </p>
+
+
+                <div class="hero-actions">
+
+                    <a
+                        class="button primary"
+                        href="#hub"
+                    >
+                        Explorar Hub
+                    </a>
+
+
+                    <a
+                        class="button"
+                        href="https://github.com/felipedlacerda/Hub-Acad-mico-Profissional"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        GitHub ↗
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 ECG
+            ================================================== -->
+
+            <div class="visual">
+
+                <div class="orb"></div>
+
+
+                <div class="ecg-wrapper">
+
+                    <svg
+                        class="ecg"
+                        viewBox="0 0 1000 260"
+                        xmlns="http://www.w3.org/2000/svg"
+                        role="img"
+                        aria-label="Eletrocardiograma"
+                    >
+
+                        <!-- GRADE -->
+
+                        <path
+                            class="ecg-grid"
+                            d="
+                                M0 65 H1000
+                                M0 130 H1000
+                                M0 195 H1000
+
+                                M100 0 V260
+                                M200 0 V260
+                                M300 0 V260
+                                M400 0 V260
+                                M500 0 V260
+                                M600 0 V260
+                                M700 0 V260
+                                M800 0 V260
+                                M900 0 V260
+                            "
+                        />
+
+
+                        <!-- ECG PRINCIPAL -->
+
+                        <path
+                            class="ecg-line"
+                            d="
+                                M0 130
+
+                                L80 130
+
+                                C95 130 105 108 120 108
+                                C135 108 145 130 160 130
+
+                                L220 130
+
+                                L235 145
+                                L250 130
+
+                                L265 55
+                                L280 205
+                                L295 130
+
+                                L365 130
+
+                                C390 130 410 90 440 90
+                                C470 90 490 130 515 130
+
+                                L600 130
+
+                                C615 130 625 108 640 108
+                                C655 108 665 130 680 130
+
+                                L740 130
+
+                                L755 145
+                                L770 130
+
+                                L785 55
+                                L800 205
+                                L815 130
+
+                                L885 130
+
+                                C910 130 930 90 960 90
+                                C985 90 995 130 1000 130
+                            "
+                        />
+
+
+                        <!-- LINHA ANIMADA -->
+
+                        <path
+                            class="ecg-animation"
+                            d="
+                                M0 130
+
+                                L80 130
+
+                                C95 130 105 108 120 108
+                                C135 108 145 130 160 130
+
+                                L220 130
+
+                                L235 145
+                                L250 130
+
+                                L265 55
+                                L280 205
+                                L295 130
+
+                                L365 130
+
+                                C390 130 410 90 440 90
+                                C470 90 490 130 515 130
+
+                                L600 130
+
+                                C615 130 625 108 640 108
+                                C655 108 665 130 680 130
+
+                                L740 130
+
+                                L755 145
+                                L770 130
+
+                                L785 55
+                                L800 205
+                                L815 130
+
+                                L885 130
+
+                                C910 130 930 90 960 90
+                                C985 90 995 130 1000 130
+                            "
+                        />
+
+                    </svg>
+
+
+                    <!-- LINHA DE VARREDURA -->
+
+                    <div class="ecg-scan"></div>
+
+
+                    <!-- FREQUÊNCIA -->
+
+                    <div class="heart-rate">
+
+                        <span class="heart-dot"></span>
+
+                        <span class="heart-rate-label">
+                            ECG
+                        </span>
+
+                        <strong>
+                            72
+                        </strong>
+
+                        <small>
+                            BPM
+                        </small>
+
+                    </div>
+
+
+                    <!-- IDENTIFICAÇÃO -->
+
+                    <span class="ecg-label label-p">
+                        P
+                    </span>
+
+                    <span class="ecg-label label-qrs">
+                        QRS
+                    </span>
+
+                    <span class="ecg-label label-t">
+                        T
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             MEDICINA × TECNOLOGIA
+        ====================================================== -->
+
+        <section
+            class="container reveal"
+            id="conexao"
+        >
+
+            <div class="section-label">
+                01 — Conexão
+            </div>
+
+
+            <h2 class="section-title">
+                Medicina × Tecnologia
+            </h2>
+
+
+            <p class="section-intro">
+
+                Duas áreas que se encontram na busca por
+                soluções mais inteligentes, eficientes
+                e humanas.
+
+            </p>
+
+
+            <div class="connection">
+
+
+                <div class="connection-box">
+
+                    <h3>
+                        Medicina
+                    </h3>
+
+
+                    <p>
+
+                        Conhecimento científico, cuidado,
+                        raciocínio clínico e compreensão
+                        do ser humano.
+
+                    </p>
+
+                </div>
+
+
+                <div class="connection-box">
+
+                    <h3>
+                        Tecnologia
+                    </h3>
+
+
+                    <p>
+
+                        Desenvolvimento de sistemas,
+                        engenharia de software, dados,
+                        inovação e resolução de problemas.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             HUB ACADÊMICO
+        ====================================================== -->
+
+        <section
+            class="container reveal"
+            id="hub"
+        >
+
+            <div class="section-label">
+                02 — Academic Hub
+            </div>
+
+
+            <h2 class="section-title">
+                Explore o acervo.
+            </h2>
+
+
+            <p class="section-intro">
+
+                As seis áreas abaixo correspondem diretamente
+                às pastas presentes no repositório GitHub.
+                Cada acesso leva à respectiva área do projeto.
+
+            </p>
+
+
+            <div class="hub-grid">
+
+
+                <!-- 01 -->
+
+                <a
+                    class="hub-card"
+                    href="Hub-Academico-Profissional/01_Apresentacao_e_Perfil/"
+                >
+
+                    <div class="card-number">
+                        01
+                    </div>
+
+
+                    <h3>
+                        Apresentação e Perfil
+                    </h3>
+
+
+                    <p>
+
+                        Informações acadêmicas,
+                        profissionais, perfil e
+                        formas de contato.
+
+                    </p>
+
+
+                    <div class="card-arrow">
+                        ↗
+                    </div>
+
+                </a>
+
+
+
+                <!-- 02 -->
+
+                <a
+                    class="hub-card"
+                    href="Hub-Academico-Profissional/02_Engenharia_de_Software/"
+                >
+
+                    <div class="card-number">
+                        02
+                    </div>
+
+
+                    <h3>
+                        Engenharia de Software
+                    </h3>
+
+
+                    <p>
+
+                        Estudos, desenvolvimento de
+                        software, programação, sistemas
+                        e engenharia.
+
+                    </p>
+
+
+                    <div class="card-arrow">
+                        ↗
+                    </div>
+
+                </a>
+
+
+
+                <!-- 03 -->
+
+                <a
+                    class="hub-card"
+                    href="Hub-Academico-Profissional/03_Medicina/"
+                >
+
+                    <div class="card-number">
+                        03
+                    </div>
+
+
+                    <h3>
+                        Medicina
+                    </h3>
+
+
+                    <p>
+
+                        Conteúdos, estudos, conhecimentos
+                        e projetos relacionados à
+                        área médica.
+
+                    </p>
+
+
+                    <div class="card-arrow">
+                        ↗
+                    </div>
+
+                </a>
+
+
+
+                <!-- 04 -->
+
+                <a
+                    class="hub-card"
+                    href="Hub-Academico-Profissional/04_Projetos_e_Pesquisa/"
+                >
+
+                    <div class="card-number">
+                        04
+                    </div>
+
+
+                    <h3>
+                        Projetos e Pesquisa
+                    </h3>
+
+
+                    <p>
+
+                        Projetos acadêmicos, experimentos,
+                        pesquisas e iniciativas
+                        multidisciplinares.
+
+                    </p>
+
+
+                    <div class="card-arrow">
+                        ↗
+                    </div>
+
+                </a>
+
+
+
+                <!-- 05 -->
+
+                <a
+                    class="hub-card"
+                    href="Hub-Academico-Profissional/05_Certificados/"
+                >
+
+                    <div class="card-number">
+                        05
+                    </div>
+
+
+                    <h3>
+                        Certificados
+                    </h3>
+
+
+                    <p>
+
+                        Formação complementar, cursos,
+                        certificações e qualificações.
+
+                    </p>
+
+
+                    <div class="card-arrow">
+                        ↗
+                    </div>
+
+                </a>
+
+
+
+                <!-- 06 -->
+
+                <a
+                    class="hub-card"
+                    href="Hub-Academico-Profissional/06_Idiomas/"
+                >
+
+                    <div class="card-number">
+                        06
+                    </div>
+
+
+                    <h3>
+                        Idiomas
+                    </h3>
+
+
+                    <p>
+
+                        Estudos, certificações e
+                        desenvolvimento de competências
+                        linguísticas.
+
+                    </p>
+
+
+                    <div class="card-arrow">
+                        ↗
+                    </div>
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             REPOSITÓRIO
+        ====================================================== -->
+
+        <section
+            class="container reveal"
+            id="repositorio"
+        >
+
+            <div class="section-label">
+                03 — Repository
+            </div>
+
+
+            <h2 class="section-title">
+                Estrutura do repositório.
+            </h2>
+
+
+            <p class="section-intro">
+
+                Navegue diretamente pelas áreas disponíveis
+                no repositório acadêmico.
+
+            </p>
+
+
+            <div class="repository">
+
+
+                <!-- 01 -->
+
+                <a
+                    class="repository-item"
+                    href="Hub-Academico-Profissional/01_Apresentacao_e_Perfil/"
+                >
+
+                    <div class="repository-number">
+                        01
+                    </div>
+
+
+                    <div>
+
+                        <div class="repository-name">
+                            01_Apresentacao_e_Perfil
+                        </div>
+
+
+                        <span class="repository-path">
+                            /Hub-Academico-Profissional/01_Apresentacao_e_Perfil
+                        </span>
+
+                    </div>
+
+
+                    <div class="repository-arrow">
+                        ↗
+                    </div>
+
+                </a>
+
+
+
+                <!-- 02 -->
+
+                <a
+                    class="repository-item"
+                    href="Hub-Academico-Profissional/02_Engenharia_de_Software/"
+                >
+
+                    <div class="repository-number">
+                        02
+                    </div>
+
+
+                    <div>
+
+                        <div class="repository-name">
+                            02_Engenharia_de_Software
+                        </div>
+
+
+                        <span class="repository-path">
+                            /Hub-Academico-Profissional/02_Engenharia_de_Software
+                        </span>
+
+                    </div>
+
+
+                    <div class="repository-arrow">
+                        ↗
+                    </div>
+
+                </a>
+
+
+
+                <!-- 03 -->
+
+                <a
+                    class="repository-item"
+                    href="Hub-Academico-Profissional/03_Medicina/"
+                >
+
+                    <div class="repository-number">
+                        03
+                    </div>
+
+
+                    <div>
+
+                        <div class="repository-name">
+                            03_Medicina
+                        </div>
+
+
+                        <span class="repository-path">
+                            /Hub-Academico-Profissional/03_Medicina
+                        </span>
+
+                    </div>
+
+
+                    <div class="repository-arrow">
+                        ↗
+                    </div>
+
+                </a>
+
+
+
+                <!-- 04 -->
+
+                <a
+                    class="repository-item"
+                    href="Hub-Academico-Profissional/04_Projetos_e_Pesquisa/"
+                >
+
+                    <div class="repository-number">
+                        04
+                    </div>
+
+
+                    <div>
+
+                        <div class="repository-name">
+                            04_Projetos_e_Pesquisa
+                        </div>
+
+
+                        <span class="repository-path">
+                            /Hub-Academico-Profissional/04_Projetos_e_Pesquisa
+                        </span>
+
+                    </div>
+
+
+                    <div class="repository-arrow">
+                        ↗
+                    </div>
+
+                </a>
+
+
+
+                <!-- 05 -->
+
+                <a
+                    class="repository-item"
+                    href="Hub-Academico-Profissional/05_Certificados/"
+                >
+
+                    <div class="repository-number">
+                        05
+                    </div>
+
+
+                    <div>
+
+                        <div class="repository-name">
+                            05_Certificados
+                        </div>
+
+
+                        <span class="repository-path">
+                            /Hub-Academico-Profissional/05_Certificados
+                        </span>
+
+                    </div>
+
+
+                    <div class="repository-arrow">
+                        ↗
+                    </div>
+
+                </a>
+
+
+
+                <!-- 06 -->
+
+                <a
+                    class="repository-item"
+                    href="Hub-Academico-Profissional/06_Idiomas/"
+                >
+
+                    <div class="repository-number">
+                        06
+                    </div>
+
+
+                    <div>
+
+                        <div class="repository-name">
+                            06_Idiomas
+                        </div>
+
+
+                        <span class="repository-path">
+                            /Hub-Academico-Profissional/06_Idiomas
+                        </span>
+
+                    </div>
+
+
+                    <div class="repository-arrow">
+                        ↗
+                    </div>
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             GITHUB
+        ====================================================== -->
+
+        <section
+            class="container github-section reveal"
+        >
+
+            <div class="section-label">
+                04 — GitHub
+            </div>
+
+
+            <h2 class="section-title">
+                O conhecimento continua no código.
+            </h2>
+
+
+            <p>
+
+                Acesse o repositório completo para acompanhar
+                os materiais, projetos, estudos e atualizações.
+
+            </p>
+
+
+            <a
+                class="button primary"
+                href="https://github.com/felipedlacerda/Hub-Acad-mico-Profissional"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Abrir repositório ↗
+            </a>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =========================================================
+         FOOTER
+    ========================================================= -->
+
+    <footer>
+
+        <div class="container footer-content">
+
+            <div class="footer-brand">
+                FL<span>.</span> /
+                HUB ACADÊMICO
+            </div>
+
+
+            <div>
+                © 2026
+            </div>
+
+
+            <div>
+                MEDICINE × TECHNOLOGY
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =========================================================
+         JAVASCRIPT
+    ========================================================= -->
+
+    <script>
+
+        /* =========================================================
+           MENU MOBILE
+        ========================================================= */
+
+        const menuToggle =
+            document.getElementById(
+                "menu-toggle"
+            );
+
+
+        const mainNav =
+            document.getElementById(
+                "main-nav"
+            );
+
+
+        menuToggle.addEventListener(
+            "click",
+            () => {
+
+                const isOpen =
+                    mainNav.classList.toggle(
+                        "open"
+                    );
+
+
+                menuToggle.classList.toggle(
+                    "active"
+                );
+
+
+                menuToggle.setAttribute(
+                    "aria-expanded",
+                    isOpen
+                );
+
+
+                menuToggle.setAttribute(
+                    "aria-label",
+                    isOpen
+                        ? "Fechar menu"
+                        : "Abrir menu"
+                );
+
+            }
+        );
+
+
+        /* =========================================================
+           FECHAR MENU AO CLICAR
+        ========================================================= */
+
+        const navLinks =
+            mainNav.querySelectorAll("a");
+
+
+        navLinks.forEach(
+            (link) => {
+
+                link.addEventListener(
+                    "click",
+                    () => {
+
+                        mainNav.classList.remove(
+                            "open"
+                        );
+
+
+                        menuToggle.classList.remove(
+                            "active"
+                        );
+
+
+                        menuToggle.setAttribute(
+                            "aria-expanded",
+                            "false"
+                        );
+
+
+                        menuToggle.setAttribute(
+                            "aria-label",
+                            "Abrir menu"
+                        );
+
+                    }
+                );
+
+            }
+        );
+
+
+        /* =========================================================
+           FECHAR MENU AO REDIMENSIONAR
+        ========================================================= */
+
+        window.addEventListener(
+            "resize",
+            () => {
+
+                if (
+                    window.innerWidth > 700
+                ) {
+
+                    mainNav.classList.remove(
+                        "open"
+                    );
+
+
+                    menuToggle.classList.remove(
+                        "active"
+                    );
+
+
+                    menuToggle.setAttribute(
+                        "aria-expanded",
+                        "false"
+                    );
+
+                }
+
+            }
+        );
+
+
+        /* =========================================================
+           ANIMAÇÕES DE SCROLL
+        ========================================================= */
+
+        const elements =
+            document.querySelectorAll(
+                ".reveal"
+            );
+
+
+        const observer =
+            new IntersectionObserver(
+
+                (entries) => {
+
+                    entries.forEach(
+                        (entry) => {
+
+                            if (
+                                entry.isIntersecting
+                            ) {
+
+                                entry.target
+                                    .classList
+                                    .add("visible");
+
+                            }
+
+                        }
+                    );
+
+                },
+
+                {
+                    threshold:
+                        0.12
+                }
+
+            );
+
+
+        elements.forEach(
+            (element) => {
+
+                observer.observe(
+                    element
+                );
+
+            }
+        );
+
+
+        /* =========================================================
+           PARALLAX DO ECG / ORBE
+        ========================================================= */
+
+        const visual =
+            document.querySelector(
+                ".visual"
+            );
+
+
+        const hasHover =
+            window.matchMedia(
+                "(hover: hover)"
+            );
+
+
+        if (
+            visual &&
+            hasHover.matches
+        ) {
+
+            document.addEventListener(
+                "mousemove",
+                (event) => {
+
+                    const x =
+                        (
+                            window.innerWidth / 2
+                            -
+                            event.clientX
+                        ) * 0.006;
+
+
+                    const y =
+                        (
+                            window.innerHeight / 2
+                            -
+                            event.clientY
+                        ) * 0.006;
+
+
+                    visual.style.transform =
+                        `translate(${x}px, ${y}px)`;
+
+                }
+            );
+
+        }
+
+
+        /* =========================================================
+           ESC FECHA MENU
+        ========================================================= */
+
+        document.addEventListener(
+            "keydown",
+            (event) => {
+
+                if (
+                    event.key === "Escape"
+                ) {
+
+                    mainNav.classList.remove(
+                        "open"
+                    );
+
+
+                    menuToggle.classList.remove(
+                        "active"
+                    );
+
+
+                    menuToggle.setAttribute(
+                        "aria-expanded",
+                        "false"
+                    );
+
+
+                    menuToggle.setAttribute(
+                        "aria-label",
+                        "Abrir menu"
+                    );
+
+                }
+
+            }
+        );
+
+    </script>
+
+</body>
+
+  </html>
