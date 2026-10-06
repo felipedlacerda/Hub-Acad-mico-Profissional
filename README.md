@@ -4,9 +4,16 @@
 
 ### Medicina • Oncologia • Tecnologia • Inteligência Artificial • Genômica
 
-<p>
-Repositório destinado à organização do meu portfólio acadêmico, profissional e de desenvolvimento tecnológico.
-</p>
+<br>
+
+![Medicine](https://img.shields.io/badge/Medicine-0A84FF?style=for-the-badge&logo=medrt&logoColor=white)
+![Oncology](https://img.shields.io/badge/Oncology-38BDF8?style=for-the-badge&logoColor=white)
+![Artificial Intelligence](https://img.shields.io/badge/Artificial%20Intelligence-111827?style=for-the-badge&logo=openai&logoColor=white)
+![Genomics](https://img.shields.io/badge/Genomics-0284C7?style=for-the-badge&logoColor=white)
+
+<br>
+
+**Portfólio acadêmico, profissional e tecnológico dedicado à integração entre Medicina, Ciência e Tecnologia.**
 
 </div>
 
@@ -14,79 +21,70 @@ Repositório destinado à organização do meu portfólio acadêmico, profission
 
 ## 👨‍⚕️ Sobre mim
 
-Médico graduado pelo **UniCEUB** em 2022 e especialista em **Clínica Médica pelo Hospital de Base do Distrito Federal (HBDF)** em 2026.
+Médico graduado pelo **Centro Universitário de Brasília (UniCEUB)** em 2022 e especialista em **Clínica Médica pelo Hospital de Base do Distrito Federal (HBDF)** em 2026.
 
-Minha formação e atuação abrangem **Medicina Intensiva, Oncologia, Cuidados Paliativos, Docência Médica e Tecnologia aplicada à Saúde**.
+Minha trajetória acadêmica e profissional envolve diferentes áreas da medicina, com experiência e interesse particular em **Medicina Intensiva, Oncologia, Cuidados Paliativos, Docência Médica e Tecnologia aplicada à Saúde**.
 
-Durante minha formação, realizei experiências e estágios em diferentes áreas, incluindo:
+Atualmente, busco integrar a formação médica tradicional às novas possibilidades proporcionadas pela **Inteligência Artificial, ciência de dados, genômica e medicina de precisão**.
 
-- 🫀 **Habilidades Cardiológicas** — Docência médica pela UniRV
-- 🧬 **Onco-Hematologia Pediátrica**
-- 🩺 **Nefrologia** — Beneficência Portuguesa de São Paulo
-- 🎗️ **Medicina Intensiva Oncológica** — Hospital de Câncer de Barretos
+<br>
 
----
+### 🏥 Formação & Experiência
 
-## 📚 Produção acadêmica
-
-Desenvolvo trabalhos e publicações nas áreas de:
-
-- Oncologia
-- Cuidados paliativos
-- Medicina intensiva
-- Tecnologia aplicada à saúde
-- Inteligência Artificial em Medicina
-
-### 📄 Publicação recente
-
-> **"Beyond Prognosis: Identity, Meaning, and Existential Uncertainty After Severe Brain Injury"**
-
-Publicado na revista **Palliative & Supportive Care**, da **Cambridge University Press**.
+| Área | Instituição / Experiência |
+|:---|:---|
+| 🩺 **Clínica Médica** | Hospital de Base do Distrito Federal — HBDF |
+| 🫀 **Cardiologia** | Docência em Habilidades Cardiológicas — UniRV |
+| 🧬 **Onco-Hematologia Pediátrica** | Hospital da Criança de Brasília José Alencar |
+| 🩻 **Nefrologia** | Beneficência Portuguesa de São Paulo |
+| 🎗️ **Medicina Intensiva Oncológica** | Hospital de Câncer de Barretos |
+| 🏥 **Medicina Intensiva** | Atuação em Unidade de Terapia Intensiva |
 
 ---
 
-## 💻 Tecnologia & Inteligência Artificial
+## 🔬 Produção Acadêmica & Pesquisa
 
-Tenho especial interesse na integração entre **Medicina, Oncologia e Tecnologia**, especialmente em:
+Meus principais interesses acadêmicos estão concentrados na interface entre:
 
-- 🤖 Inteligência Artificial
-- 🧬 Genômica e bioinformática
-- 📊 Modelos preditivos
-- 🏥 Sistemas de apoio à decisão clínica
-- 🐍 Programação em Python
-- 🔬 Tecnologia aplicada à pesquisa médica
+`Oncologia` • `Cuidados Paliativos` • `Medicina Intensiva` • `Inteligência Artificial` • `Saúde Digital`
 
-Complementarmente à formação médica, realizei cursos de extensão em:
+### 📄 Publicação em destaque
 
-- Genômica
-- ACLS
-- ATLS
-- Python — IBM
-- Inteligência Artificial
+> ### Beyond Prognosis: Identity, Meaning, and Existential Uncertainty After Severe Brain Injury
+>
+> **Palliative & Supportive Care — Cambridge University Press**
+>
+> Trabalho relacionado às dimensões de identidade, significado e incerteza existencial após lesão cerebral grave.
 
----
+<br>
 
-## 🌎 Idiomas
+### 🧪 Iniciação Científica
 
-- 🇺🇸 **Inglês:** avançado
-- 🇨🇳 **Mandarim:** estudos iniciados em 2026
+**Lipidômica das impressões digitais em ciências forenses: utilização da impressão química na impressão morfológica pela espectrometria de massas**
+
+Centro Universitário de Brasília — **UniCEUB**
 
 ---
 
-## 🎯 Atualmente
-
-Atualmente, dedico-me à preparação para **Residência Médica em Oncologia**, buscando construir uma trajetória que integre:
-
-**Medicina + Oncologia + Ciência + Tecnologia + Inteligência Artificial**
-
-Meu objetivo é desenvolver soluções e pesquisas capazes de aproximar a tecnologia da prática clínica, contribuindo para uma medicina cada vez mais **precisa, personalizada e baseada em evidências**.
-
----
+## 💻 Medicina × Tecnologia
 
 <div align="center">
 
-### 🚀 Áreas de interesse
-
-**Oncologia** • **IA em Saúde** • **Genômica** • **Pesquisa Clínica** • **Cuidados Paliativos** • **Medicina de Precisão**
+### Transformando dados em conhecimento e conhecimento em cuidado.
 
 </div>
+
+Tenho especial interesse no desenvolvimento e aplicação de tecnologias capazes de ampliar a capacidade de **pesquisa, diagnóstico, prognóstico e tomada de decisão clínica**.
+
+```text
+MEDICINA
+   │
+   ├── Inteligência Artificial
+   ├── Ciência de Dados
+   ├── Genômica
+   ├── Bioinformática
+   ├── Pesquisa Clínica
+   └── Medicina de Precisão
+          │
+          ▼
+     Cuidado Personalizado
