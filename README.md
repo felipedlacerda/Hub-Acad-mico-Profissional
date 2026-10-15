@@ -18,15 +18,15 @@ Brasília, Distrito Federal · Brasil
 ## Apresentação
 
 <p align="justify">
-O Hub Acadêmico & Profissional reúne registros de formação, experiência assistencial, produção científica e projetos desenvolvidos no âmbito da Medicina e da Engenharia de Software. Constitui um espaço de documentação acadêmica e técnica, destinado à organização de materiais, à preservação do histórico de desenvolvimento e à apresentação pública de atividades profissionais.
+O Hub Acadêmico & Profissional integra minhas formações, experiências assistenciais, produções científicas e projetos realizados nas áreas de Medicina e da Engenharia de Software. É um espaço composto por documentação acadêmica e técnica, com o objetivo da organização de materiais, à preservação do histórico de desenvolvimento e à apresentação pública de atividades profissionais.
 </p>
 
 <p align="justify">
-A trajetória apresentada compreende a formação médica, a atuação hospitalar, a participação em atividades de pesquisa e ensino e o estudo de métodos computacionais aplicados à saúde. A Oncologia Clínica constitui o principal campo de interesse para a continuidade dessa formação, particularmente nas áreas de medicina de precisão, genômica e investigação clínica.
+A trajetória  é demostrada desde minha formação médica, atuação hospitalar, pesquisas e também para estudos computacionais destinados a aplicação à saúde. A Oncologia Clínica constitui meu principal campo de interesse de aprofundamento nos próximos anos.
 </p>
 
 <p align="justify">
-O repositório mantém duas funções distintas: documentar a produção acadêmica e técnica, com seus respectivos arquivos e registros de alteração, e disponibilizar uma interface pública de apresentação profissional por meio do GitHub Pages.
+O repositório é fundamentado em duas características: documentação de projetos acadêmicos e profissionais, com seus respectivos arquivos e versionamentos. Podendo ser visualizado por uma interface pública de apresentação profissional por meio do GitHub Pages.
 </p>
 
 ---
@@ -36,7 +36,7 @@ O repositório mantém duas funções distintas: documentar a produção acadêm
 ### Medicina
 
 <p align="justify">
-Graduado em Medicina pelo Centro Universitário de Brasília (UniCEUB), em 2022, e especialista em Clínica Médica pelo Hospital de Base do Distrito Federal (HBDF), com conclusão da residência médica em 2026. A formação compreende atividades assistenciais em diferentes níveis de complexidade, com experiência em ambientes hospitalares, unidades de terapia intensiva e atendimento de pacientes com condições clínicas agudas e crônicas.
+Graduado em Medicina pelo Centro Universitário de Brasília (UniCEUB), em 2022, e especialista em Clínica Médica pelo Hospital de Base do Distrito Federal (HBDF), com término da residência médica em 2026. Possuo experiência em atividades assistenciais em diferentes níveis de complexidade, tanto em contextos de pacientes críticos quanto não críticos.
 </p>
 
 ### Formação e atividades
@@ -160,11 +160,11 @@ Projeto acadêmico com diretório independente, destinado à organização de se
 ## V. Medicina e tecnologia
 
 <p align="justify">
-A integração entre conhecimentos médicos e computacionais constitui uma área de interesse voltada à investigação de problemas clínicos e ao desenvolvimento de métodos de organização, análise e utilização de informações em saúde. Nesse campo, destacam-se a engenharia de requisitos, a modelagem de bancos de dados, a interoperabilidade e os métodos de inteligência artificial.
+A integração entre medicina e computação constitui uma área de interesse voltada à investigação de problemas clínicos e ao desenvolvimento de métodos organizacionais, analíticos e de armazenamento de informações em saúde.
 </p>
 
 <p align="justify">
-Na Oncologia, essas competências apresentam aplicações potenciais na estruturação de registros clínicos, na análise de resultados terapêuticos, na integração de informações moleculares e na condução de estudos observacionais. A utilização dessas tecnologias exige atenção à qualidade dos dados, à segurança da informação, à validação dos métodos e aos limites de sua aplicação clínica.
+Na Oncologia, essas competências apresentam aplicações potenciais na estruturação de registros clínicos, na análise terapêutica, na integração de informações genômicas e na condução de estudos observacionais.
 </p>
 
 ---
@@ -227,7 +227,7 @@ Hub-Acad-mico-Profissional/
 ### Critérios de organização
 
 <p align="justify">
-A estrutura foi definida para permitir a localização direta dos materiais e reduzir a dispersão documental. Cada área possui um diretório específico, enquanto os projetos mantêm registros próprios de requisitos, desenvolvimento e resultados. As alterações são acompanhadas por controle de versões, permitindo identificar modificações e recuperar estados anteriores dos arquivos.
+Estruturação feita para permitir a localização direta dos materiais e reduzir a perda de documentos. Cada área possui um diretório específico, com seus projetos mantendo registros próprios de requisitos, processo de desenvolvimento e resultados. Os versionamentos permitem o acompanhamento Longitudinal.
 </p>
 
 ---
@@ -282,7 +282,7 @@ As modificações são registradas por meio de commits, permitindo acompanhar a 
 ### Formação complementar
 
 <p align="justify">
-A formação complementar compreende atividades relacionadas à Medicina, à pesquisa biomédica e à tecnologia, incluindo genômica, suporte avançado de vida, programação e fundamentos de inteligência artificial. Os registros documentais são organizados por área de formação.
+A formação complementar compreende atividades relacionadas à Medicina, à biologia molecular e à tecnologia, incluindo genômica, suporte avançado de vida, programação e fundamentos de inteligência artificial. Os registros documentais são organizados por área de formação.
 </p>
 
 [Consultar certificados](./05_Certificados/)
@@ -303,10 +303,6 @@ A formação complementar compreende atividades relacionadas à Medicina, à pes
 
 <p align="justify">
 A continuidade da formação está orientada à Oncologia Clínica e ao desenvolvimento de competências em Engenharia de Software, particularmente em requisitos, bancos de dados, programação e sistemas de informação em saúde.
-</p>
-
-<p align="justify">
-A articulação dessas áreas oferece possibilidades de investigação em medicina de precisão, pesquisa clínica e análise de dados biomédicos. O repositório será atualizado conforme a realização de novas atividades acadêmicas, a produção de materiais técnicos e a publicação de trabalhos científicos.
 </p>
 
 ---
