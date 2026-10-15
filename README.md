@@ -1,234 +1,248 @@
 <div align="center">
 
-<br>
-
 # FELIPE DE LACERDA PEREIRA
 
 ### Medicina · Oncologia · Ciência · Tecnologia
 
-**Médico especialista em Clínica Médica**
+**Hub Acadêmico & Profissional**
 
-Brasília · Brasil
+Médico especialista em Clínica Médica · Brasília, Brasil
 
-<br>
-
-<a href="http://lattes.cnpq.br/9381486430834524">
-  <img src="https://img.shields.io/badge/LATTES-Currículo_Acadêmico-38BDF8?style=for-the-badge&labelColor=0B1120" alt="Currículo Lattes">
-</a>
-&nbsp;
-<a href="https://www.linkedin.com/in/felipe-de-lacerda-pereira-b75122219">
-  <img src="https://img.shields.io/badge/LinkedIn-Perfil_Profissional-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
-</a>
-
-<br><br>
+[Currículo Lattes](http://lattes.cnpq.br/9381486430834524) · [LinkedIn](https://www.linkedin.com/in/felipe-de-lacerda-pereira-b75122219/) · [Portfólio](https://felipedlacerda.github.io/Hub-Acad-mico-Profissional/) · [GitHub](https://github.com/felipedlacerda/Hub-Acad-mico-Profissional)
 
 <sub>MEDICINA × CIÊNCIA × TECNOLOGIA</sub>
 
-<br><br>
-
 </div>
 
 ---
 
-## 👨🏽‍⚕️ Perfil
+## I. Identidade e trajetória
+
+### 01 — Apresentação institucional
 
 <p align="justify">
-Médico graduado pelo <strong>Centro Universitário de Brasília (UniCEUB)</strong> em 2022 e especialista em <strong>Clínica Médica pelo Hospital de Base do Distrito Federal (HBDF)</strong>, com conclusão da residência médica em 2026.
+O <strong>Hub Acadêmico & Profissional</strong> reúne registros da formação, produção científica, experiências assistenciais e projetos acadêmicos de Felipe de Lacerda Pereira. Além de apresentar essa trajetória, funciona como um repositório de desenvolvimento web, documentação e controle de versões, no contexto da formação em Engenharia de Software.
 </p>
 
 <p align="justify">
-Minha trajetória profissional reúne <strong>assistência médica, pesquisa científica e tecnologia</strong>, com experiência em Medicina Intensiva e formação complementar em diferentes áreas clínicas. Atualmente, direciono minha formação para a <strong>Oncologia Clínica</strong>, com especial interesse na integração entre oncologia, medicina de precisão, genômica e inteligência artificial.
+A proposta distingue dois componentes complementares: o portfólio público, destinado à consulta, e o repositório técnico, no qual ficam disponíveis os arquivos, a documentação e o histórico de alterações.
 </p>
 
-**Formação:** Medicina — UniCEUB · 2022  
-**Especialidade:** Clínica Médica — HBDF · 2026  
-**Foco atual:** Oncologia Clínica · Medicina de Precisão
+### 02 — Formação e trajetória profissional
 
-<br>
+<p align="justify">
+Graduado em Medicina pelo Centro Universitário de Brasília (UniCEUB), em 2022, e especialista em Clínica Médica pelo Hospital de Base do Distrito Federal (HBDF), com conclusão da residência médica em 2026. A trajetória reúne assistência médica, pesquisa e ensino, com atuação em Medicina Intensiva e interesse direcionado à Oncologia Clínica e à medicina de precisão.
+</p>
+
+| Área | Instituição ou atividade |
+|:--|:--|
+| Medicina | Centro Universitário de Brasília (UniCEUB) |
+| Clínica Médica | Hospital de Base do Distrito Federal — HBDF |
+| Medicina Intensiva | Atuação em Unidade de Terapia Intensiva Geral |
+| Medicina Intensiva Oncológica | Hospital de Câncer de Barretos |
+| Onco-Hematologia Pediátrica | Hospital da Criança de Brasília José Alencar |
+| Nefrologia | Beneficência Portuguesa de São Paulo |
+| Docência médica | Habilidades de Cardiologia — Universidade de Rio Verde |
+
+### 03 — Pesquisa e produção científica
+
+**Beyond Prognosis: Identity, Meaning, and Existential Uncertainty After Severe Brain Injury**
+
+*Palliative & Supportive Care* · Cambridge University Press · 2026
+
+<p align="justify">
+O trabalho examina os limites da prognosticação após lesão cerebral grave, com atenção às questões de identidade, significado, adaptação e incerteza nas decisões clínicas e nos cuidados paliativos.
+</p>
+
+[DOI: 10.1017/S1478951526103216](https://doi.org/10.1017/S1478951526103216)
+
+**Iniciação científica — Lipidômica das impressões digitais em ciências forenses**
+
+Centro Universitário de Brasília — UniCEUB
+
+<p align="justify">
+Pesquisa sobre a utilização de espectrometria de massas e informações químicas presentes em impressões digitais como complemento à caracterização morfológica.
+</p>
+
+#### Produção acadêmica e científica
+
+<p align="justify">
+O registro da trajetória acadêmica, das atividades de pesquisa, da formação complementar e da produção bibliográfica encontra-se disponível no Currículo Lattes, mantido na plataforma do Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq).
+</p>
+
+**[Consultar Currículo Lattes — CNPq](http://lattes.cnpq.br/9381486430834524)**
 
 ---
 
-## Trajetória
+## II. Ciência e engenharia
+
+### 04 — Medicina e tecnologia
 
 <p align="justify">
-Minha formação médica foi construída em diferentes ambientes assistenciais, acadêmicos e de pesquisa, reunindo experiências em Clínica Médica, Medicina Intensiva, Oncologia, Nefrologia e ensino médico.
+O interesse em tecnologia concentra-se na aplicação de métodos computacionais a problemas clínicos e científicos, especialmente na integração de dados assistenciais, informação molecular e ferramentas de apoio à decisão. Inteligência artificial, genômica e ciência de dados compõem os principais eixos de estudo, com perspectiva de aplicação à Oncologia Clínica.
 </p>
 
-**Clínica Médica**  
-Hospital de Base do Distrito Federal — HBDF
+### 05 — Objetivos e escopo do repositório
 
-**Medicina Intensiva**  
-Atuação em Unidade de Terapia Intensiva Geral
+O Hub tem cinco objetivos operacionais:
 
-**Medicina Intensiva Oncológica**  
-Hospital de Câncer de Barretos
+1. **Centralização:** reunir materiais acadêmicos e projetos em ambiente público.
+2. **Organização:** manter uma estrutura de arquivos compreensível e extensível.
+3. **Rastreabilidade:** registrar modificações por meio de Git e GitHub.
+4. **Documentação:** estabelecer registros técnicos para consulta e manutenção.
+5. **Publicação:** disponibilizar o portfólio e integrá-lo a plataformas profissionais.
 
-**Onco-Hematologia Pediátrica**  
-Hospital da Criança de Brasília José Alencar
+<p align="justify">
+O repositório abriga a página web do portfólio e diretórios voltados à documentação e aos projetos acadêmicos. A descrição de cada projeto deve diferenciar resultados implementados, materiais disponíveis e funcionalidades planejadas.
+</p>
 
-**Nefrologia**  
-Beneficência Portuguesa de São Paulo
+### 06 — Arquitetura e tecnologias
 
-**Docência Médica**  
-Habilidades de Cardiologia — Universidade de Rio Verde
+| Tecnologia | Função no portfólio |
+|:--|:--|
+| HTML5 | Estrutura semântica da página web |
+| CSS3 | Apresentação visual e responsividade |
+| JavaScript | Comportamentos interativos da interface |
+| Git | Registro e controle de alterações |
+| GitHub | Hospedagem do código e da documentação |
+| GitHub Pages | Publicação da página estática |
 
-<br>
+#### 06.1 — Estrutura do repositório
+
+```text
+Hub-Acad-mico-Profissional/
+│
+├── Hub-Academico-Profissional/
+├── documentacao/
+├── projetos-academicos/
+├── README.md
+└── index.html
+```
+
+<p align="justify">
+A estrutura apresenta os principais diretórios do repositório, separando o conteúdo acadêmico da documentação e dos arquivos necessários à publicação da interface web. A organização poderá ser ampliada conforme a incorporação de novos projetos.
+</p>
+
+### 07 — Projetos acadêmicos
+
+#### 07.1 — Poupi
+
+<p align="justify">
+O Poupi integra o conjunto de projetos acadêmicos associados ao portfólio. Sua documentação individual deverá reunir a contextualização do problema, os objetivos, os requisitos identificados, as funcionalidades desenvolvidas e as tecnologias utilizadas, conforme os materiais efetivamente produzidos.
+</p>
+
+[Consultar projetos acadêmicos](https://github.com/felipedlacerda/Hub-Acad-mico-Profissional/tree/main/projetos-academicos)
+
+### 08 — Documentação e organização
+
+<p align="justify">
+O arquivo <code>README.md</code> da raiz apresenta a finalidade e a organização geral do trabalho. A documentação específica de cada projeto deve contemplar, quando aplicável, contextualização, escopo, requisitos, arquitetura, instruções de execução, resultados e limitações.
+</p>
+
+<p align="justify">
+A separação entre documentação técnica e apresentação profissional permite maior clareza na consulta e facilita a manutenção dos materiais.
+</p>
+
+[Consultar documentação](https://github.com/felipedlacerda/Hub-Acad-mico-Profissional/tree/main/documentacao)
 
 ---
 
-## Pesquisa & Produção Científica
+## III. Execução e continuidade
 
-### Beyond Prognosis
+### 09 — Execução e acesso
 
-<a href="https://www.cambridge.org/core/journals/palliative-and-supportive-care/article/beyond-prognosis-identity-meaning-and-existential-uncertainty-after-severe-brain-injury/47C4ACED5869F930F2398A32C5C93063">
-  <strong>Beyond Prognosis: Identity, Meaning, and Existential Uncertainty After Severe Brain Injury</strong>
-</a>
+**Versão publicada:** [GitHub Pages](https://felipedlacerda.github.io/Hub-Acad-mico-Profissional/)
 
-<br><br>
+**Código-fonte:** [Repositório GitHub](https://github.com/felipedlacerda/Hub-Acad-mico-Profissional)
 
-*Palliative & Supportive Care* · Cambridge University Press  
-**Volume 24 · 2026 · e209**
+Para executar localmente:
 
-<p align="justify">
-Reflexão sobre os limites da prognosticação após lesão cerebral grave, explorando identidade, significado, adaptação e incerteza no contexto da tomada de decisão clínica e dos cuidados paliativos.
-</p>
+1. Acesse o repositório.
+2. Selecione `Code → Download ZIP`.
+3. Extraia os arquivos em um diretório local.
+4. Abra `index.html` em um navegador atualizado.
+5. Caso algum recurso exija uma origem HTTP, utilize um servidor local.
 
-<a href="https://doi.org/10.1017/S1478951526103216">
-  <img src="https://img.shields.io/badge/DOI-10.1017%2FS1478951526103216-38BDF8?style=flat-square&labelColor=0B1120" alt="DOI">
-</a>
-&nbsp;
-<a href="https://www.cambridge.org/core/journals/palliative-and-supportive-care/article/beyond-prognosis-identity-meaning-and-existential-uncertainty-after-severe-brain-injury/47C4ACED5869F930F2398A32C5C93063">
-  <img src="https://img.shields.io/badge/Cambridge_Core-View_Article-0284C7?style=flat-square" alt="Cambridge Core">
-</a>
+Alternativamente, clone o repositório:
 
-<br><br>
+```bash
+git clone https://github.com/felipedlacerda/Hub-Acad-mico-Profissional.git
+```
 
-### Iniciação Científica
-
-**Lipidômica das impressões digitais em ciências forenses: utilização da impressão química na impressão morfológica pela espectrometria de massas**
-
-Centro Universitário de Brasília — **UniCEUB**
+### 10 — Controle de versões
 
 <p align="justify">
-Pesquisa envolvendo espectrometria de massas, lipidômica e suas aplicações às ciências forenses, explorando a informação química presente em impressões digitais para complementar sua caracterização morfológica.
+O desenvolvimento utiliza Git e GitHub para registrar modificações no código, acompanhar a evolução do projeto e preservar o histórico de alterações.
 </p>
 
-<br>
+<p align="justify">
+Os commits permitem identificar modificações na interface, na estrutura de arquivos e na documentação. Tags e releases poderão ser utilizadas para identificar versões estáveis, desde que correspondam a estados reais do código.
+</p>
+
+[Consultar histórico de commits](https://github.com/felipedlacerda/Hub-Acad-mico-Profissional/commits/main/)
+
+#### 10.1 — Fluxo de atualização
+
+1. Modificação dos arquivos.
+2. Revisão das alterações.
+3. Registro de commit descritivo.
+4. Envio ao repositório remoto.
+5. Verificação da publicação.
+
+### 11 — Publicação e integração profissional
+
+#### 11.1 — GitHub Pages
+
+<p align="justify">
+A interface web é disponibilizada por meio do GitHub Pages, permitindo acesso público ao portfólio sem necessidade de instalação.
+</p>
+
+<p align="justify">
+O código-fonte e a documentação permanecem disponíveis no GitHub, enquanto o GitHub Pages apresenta a interface destinada aos visitantes.
+</p>
+
+#### 11.2 — LinkedIn
+
+<p align="justify">
+A integração com o LinkedIn estabelece uma conexão entre a produção acadêmica, os projetos tecnológicos e a apresentação profissional, facilitando o acesso aos materiais desenvolvidos.
+</p>
+
+[Perfil profissional no LinkedIn](https://www.linkedin.com/in/felipe-de-lacerda-pereira-b75122219/)
+
+### 12 — Formação complementar e idiomas
+
+**Formação complementar**
+
+- Genômica.
+- ACLS — Advanced Cardiovascular Life Support.
+- ATLS — Advanced Trauma Life Support.
+- Python — IBM.
+- Inteligência artificial aplicada à tecnologia e à saúde.
+
+**Idiomas**
+
+- Português — nativo.
+- Inglês — avançado.
+- Mandarim — em desenvolvimento.
+
+### 13 — Perspectivas e autoria
+
+<p align="justify">
+A continuidade do trabalho está vinculada à formação em Engenharia de Software e ao desenvolvimento de competências em modelagem de dados, programação e sistemas aplicados à saúde. Na dimensão clínica e científica, o interesse principal permanece na Oncologia, com ênfase em medicina de precisão, genômica e uso criterioso de tecnologias computacionais.
+</p>
+
+**Responsável:** Felipe de Lacerda Pereira
+
+**Local:** Brasília, Brasil
 
 ---
-
-## Medicina × Tecnologia
-
-### Do dado à decisão clínica
-
-<p align="justify">
-Tenho especial interesse na aplicação de ferramentas computacionais a problemas médicos reais, explorando a integração entre <strong>dados clínicos, biologia molecular, inteligência artificial e tomada de decisão</strong> para o desenvolvimento de uma medicina mais precisa e individualizada.
-</p>
-
-### Inteligência Artificial
-
-<p align="justify">
-Aplicação de modelos computacionais à pesquisa médica, análise de dados, estratificação de risco, modelos preditivos e desenvolvimento de ferramentas de apoio à decisão clínica.
-</p>
-
-### Genômica
-
-<p align="justify">
-Integração entre informação molecular, características clínicas e fenótipo para ampliar a compreensão das doenças e contribuir para estratégias de medicina personalizada e oncologia de precisão.
-</p>
-
-### Ciência de Dados
-
-<p align="justify">
-Transformação de dados clínicos e científicos em informação relevante para pesquisa, geração de conhecimento e desenvolvimento de soluções aplicáveis à assistência médica.
-</p>
-
-<br>
 
 <div align="center">
 
-<img src="https://img.shields.io/badge/Python-0B1120?style=flat-square&logo=python&logoColor=38BDF8" alt="Python">
-<img src="https://img.shields.io/badge/Artificial_Intelligence-0284C7?style=flat-square&logoColor=white" alt="Artificial Intelligence">
-<img src="https://img.shields.io/badge/Genomics-38BDF8?style=flat-square&logoColor=0B1120" alt="Genomics">
-<img src="https://img.shields.io/badge/Bioinformatics-0B1120?style=flat-square&logoColor=white" alt="Bioinformatics">
-<img src="https://img.shields.io/badge/Data_Science-0284C7?style=flat-square&logoColor=white" alt="Data Science">
+**FELIPE DE LACERDA PEREIRA**
 
-</div>
+Medicina · Ciência · Tecnologia
 
-<br>
-
----
-
-## Formação Complementar
-
-**Genômica** — Formação complementar  
-**ACLS** — Advanced Cardiovascular Life Support  
-**ATLS** — Advanced Trauma Life Support  
-**Python** — IBM  
-**Inteligência Artificial** — Aplicações em tecnologia e saúde
-
-<br>
-
----
-
-## Idiomas
-
-**Português** — Nativo  
-**Inglês** — Avançado  
-**Mandarim** — Em desenvolvimento
-
-<br>
-
----
-
-## Horizonte
-
-<p align="justify">
-Meu objetivo é construir uma trajetória na interseção entre <strong>prática clínica, pesquisa científica e desenvolvimento tecnológico</strong>, com foco especial na aplicação dessas ferramentas à Oncologia.
-</p>
-
-<p align="justify">
-Busco explorar a convergência entre <strong>Medicina de Precisão, Genômica e Inteligência Artificial</strong>, transformando dados clínicos e moleculares em conhecimento capaz de contribuir para decisões médicas mais individualizadas e baseadas em evidências.
-</p>
-
-<p align="justify">
-A tecnologia, entretanto, é um meio. O objetivo permanece essencialmente humano: utilizar ciência e inovação para produzir <strong>impacto real no cuidado das pessoas</strong>.
-</p>
-
-<br>
-
-<div align="center">
-
-**PESSOAS** &nbsp;→&nbsp; **CIÊNCIA** &nbsp;→&nbsp; **DADOS** &nbsp;→&nbsp; **DECISÃO** &nbsp;→&nbsp; **IMPACTO**
-
-<br><br>
-
-</div>
-
----
-
-<div align="center">
-
-<br>
-
-### Felipe de Lacerda Pereira
-
-**Medicina · Oncologia · Ciência · Tecnologia**
-
-<br>
-
-<a href="http://lattes.cnpq.br/9381486430834524">
-  <img src="https://img.shields.io/badge/LATTES-38BDF8?style=flat-square&labelColor=0B1120" alt="Lattes">
-</a>
-&nbsp;
-<a href="https://www.linkedin.com/in/felipe-de-lacerda-pereira-b75122219">
-  <img src="https://img.shields.io/badge/LINKEDIN-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn">
-</a>
-
-<br><br>
-
-<sub>Brasília · Brasil</sub>
-
-<br><br>
+[Currículo Lattes](http://lattes.cnpq.br/9381486430834524) · [GitHub](https://github.com/felipedlacerda/Hub-Acad-mico-Profissional) · [Portfólio](https://felipedlacerda.github.io/Hub-Acad-mico-Profissional/) · [LinkedIn](https://www.linkedin.com/in/felipe-de-lacerda-pereira-b75122219/)
 
 </div>
