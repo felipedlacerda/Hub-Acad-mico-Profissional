@@ -114,7 +114,7 @@ Hub-Acad-mico-Profissional/
 │
 ├── Hub-Academico-Profissional/
 ├── documentacao/
-├── projetos-academicos/
+├── Hub-Academico-Profissional/04_Projetos_e_Pesquisa/Engenharia_de_Software/
 ├── README.md
 └── index.html
 ```
@@ -131,7 +131,7 @@ A estrutura apresenta os principais diretórios do repositório, separando o con
 O Poupi integra o conjunto de projetos acadêmicos associados ao portfólio. Sua documentação individual deverá reunir a contextualização do problema, os objetivos, os requisitos identificados, as funcionalidades desenvolvidas e as tecnologias utilizadas, conforme os materiais efetivamente produzidos.
 </p>
 
-[Consultar projetos acadêmicos](https://github.com/felipedlacerda/Hub-Acad-mico-Profissional/tree/main/projetos-academicos)
+[Consultar projetos acadêmicos](https://github.com/felipedlacerda/Hub-Acad-mico-Profissional/tree/main/Hub-Academico-Profissional/04_Projetos_e_Pesquisa/Engenharia_de_Software)
 
 ### 08 — Documentação e organização
 
