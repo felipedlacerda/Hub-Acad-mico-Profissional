@@ -117,8 +117,6 @@ Brasília · Distrito Federal · Brasil
 | 2018 | Tratamento da metástase cerebral decorrente de carcinoma de células renais — revisão literária |
 | 2018 | Prognóstico do tratamento de carcinoma ductal infiltrante HER2-negativo com paclitaxel e bevacizumabe — relato de caso |
 
-<p align="justify">A seleção acima resume os trabalhos apresentados. O currículo registra duas entradas para a apresentação sobre insulinoterapia em 2026; elas foram reunidas aqui para evitar repetição visual, sem alterar o registro original no Lattes.</p>
-
 ---
 
 ## Participação em eventos científicos
@@ -163,8 +161,6 @@ Brasília · Distrito Federal · Brasil
 | 2019 | Understanding Cancer Metastasis | Johns Hopkins University |
 | 2018 | Suporte A.P.H./BLS RCP/DEA Nível II, 20 h | International Life Support Brazil |
 
-<p align="justify">Os anos apresentados correspondem aos registros de formação complementar do Currículo Lattes. Certificados de suporte avançado de vida são indicados como formação realizada, sem declaração de validade atual.</p>
-
 ---
 
 ## Idiomas
@@ -178,7 +174,7 @@ Brasília · Distrito Federal · Brasil
 
 ## Interesses acadêmicos e continuidade da formação
 
-<p align="justify">A trajetória acadêmica apresenta continuidade temática entre Oncologia, assistência hospitalar, pesquisa científica e análise de informações em saúde. A formação em Engenharia de Software, iniciada em 2026, acrescenta conhecimentos de programação, engenharia de requisitos e modelagem de dados ao percurso médico. Entre as áreas de interesse para estudos futuros estão a medicina de precisão, a oncogenética, a pesquisa clínica, a interoperabilidade e a aplicação criteriosa de métodos computacionais à investigação biomédica.</p>
+<p align="justify"> Minha trajetória acadêmica apresenta continuidade temática entre Oncologia, assistência hospitalar, pesquisa científica e análise de informações em saúde. A formação em Engenharia de Software, iniciada em 2026, acrescenta conhecimentos de programação, engenharia de requisitos e modelagem de dados ao percurso médico. Entre as áreas de interesse para estudos futuros estão a medicina de precisão, a oncogenética, a pesquisa clínica, a interoperabilidade e a aplicação criteriosa de métodos computacionais à investigação biomédica.</p>
 
 ---
 
