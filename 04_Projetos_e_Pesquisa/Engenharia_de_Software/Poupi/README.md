@@ -430,6 +430,6 @@ Este documento apresenta o delineamento funcional e visual do Poupi, reunindo as
 
 Planejamento financeiro · Design de interfaces · Engenharia de Software
 
-[Repositório principal](https://github.com/felipedlacerda/Hub-Acad-mico-Profissional) · [Projetos acadêmicos](https://github.com/felipedlacerda/Hub-Acad-mico-Profissional/tree/main/projetos-academicos)
+[Repositório principal](https://github.com/felipedlacerda/Hub-Acad-mico-Profissional) · [Projetos acadêmicos](https://github.com/felipedlacerda/Hub-Acad-mico-Profissional/tree/main/Hub-Academico-Profissional/04_Projetos_e_Pesquisa/Engenharia_de_Software)
 
 </div>
