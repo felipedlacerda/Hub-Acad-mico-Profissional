@@ -1,311 +1,1379 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#050608">
-<meta name="description" content="Felipe de Lacerda Pereira — Medicina, Ciência, Oncologia e Engenharia de Software.">
+
 <title>Felipe de Lacerda Pereira | Medicina × Ciência × Tecnologia</title>
+
+<meta name="description" content="Portfólio acadêmico, científico e tecnológico de Felipe de Lacerda Pereira. Medicina, Clínica Médica, Oncologia, pesquisa científica e Engenharia de Software.">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Felipe de Lacerda Pereira | Medicina × Ciência × Tecnologia">
+<meta property="og:description" content="Do dado à decisão clínica. Medicina, ciência e tecnologia.">
+<meta property="og:url" content="https://felipedlacerda.github.io/Hub-Acad-mico-Profissional/">
+
+<link rel="canonical" href="https://felipedlacerda.github.io/Hub-Acad-mico-Profissional/">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Felipe de Lacerda Pereira",
+  "url": "https://felipedlacerda.github.io/Hub-Acad-mico-Profissional/",
+  "sameAs": [
+    "https://github.com/felipedlacerda/Hub-Acad-mico-Profissional"
+  ],
+  "description": "Médico especialista em Clínica Médica, com atuação em Medicina Intensiva e interesses em Oncologia, ciência e Engenharia de Software."
+}
+</script>
+
 <style>
+
+/* =========================================
+   DESIGN SYSTEM — FIBONACCI
+========================================= */
+
 :root {
-  --bg:#050608;
-  --surface:#0b1118;
-  --blue:#73d7ff;
-  --blue-deep:#234e63;
-  --white:#f4f7fa;
-  --muted:#9baab8;
-  --line:#20313c;
-  --f8:8px;
-  --f13:13px;
-  --f21:21px;
-  --f34:34px;
-  --f55:55px;
-  --f89:89px;
+  color-scheme: dark;
+
+  --bg: #050608;
+  --panel: #0b0e12;
+  --surface: #10161d;
+
+  --text: #f4f7fa;
+  --muted: #9ba9b7;
+
+  --blue: #73d7ff;
+  --blue-soft: #b8edff;
+  --blue-deep: #234e63;
+
+  --border: #23303b;
+
+  --f3: 3px;
+  --f5: 5px;
+  --f8: 8px;
+  --f13: 13px;
+  --f21: 21px;
+  --f34: 34px;
+  --f55: 55px;
+  --f89: 89px;
+  --f144: 144px;
+
+  --phi: 1.6180339;
+  --wrap: 1240px;
 }
-* { box-sizing:border-box; }
-html { scroll-behavior:smooth; scroll-padding-top:85px; }
+
+/* =========================================
+   RESET
+========================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
 body {
-  margin:0;
-  background:var(--bg);
-  color:var(--white);
-  font-family:Inter,"Segoe UI",Arial,sans-serif;
-  line-height:1.7;
-  overflow-wrap:break-word;
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Inter, ui-sans-serif, system-ui,
+    -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  line-height: 1.65;
+  overflow-x: hidden;
 }
+
 body::before {
-  content:"";
-  position:fixed;
-  inset:0;
-  pointer-events:none;
-  z-index:-1;
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+
   background-image:
-    linear-gradient(#73d7ff09 1px,transparent 1px),
-    linear-gradient(90deg,#73d7ff09 1px,transparent 1px);
-  background-size:89px 89px;
+    linear-gradient(#73d7ff08 1px, transparent 1px),
+    linear-gradient(90deg, #73d7ff08 1px, transparent 1px);
+
+  background-size: 55px 55px;
 }
-a { color:var(--blue); }
-a:focus-visible, summary:focus-visible {
-  outline:3px solid var(--blue);
-  outline-offset:5px;
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
-.container { width:min(1100px,calc(100% - 42px)); margin:auto; }
-header {
-  position:sticky;
-  top:0;
-  z-index:100;
-  background:#050608f5;
-  border-bottom:1px solid var(--line);
-  backdrop-filter:blur(15px);
+
+a:focus-visible,
+summary:focus-visible {
+  outline: 3px solid var(--blue);
+  outline-offset: 4px;
 }
-.navbar {
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  min-height:76px;
-  gap:21px;
+
+::selection {
+  background: var(--blue);
+  color: var(--bg);
 }
-.logo {
-  color:var(--white);
-  font-size:26px;
-  font-weight:800;
-  text-decoration:none;
-  letter-spacing:-2px;
+
+h1, h2, h3, p {
+  margin-top: 0;
 }
-.logo span { color:var(--blue); }
-nav { display:flex; align-items:center; gap:21px; }
-nav a {
-  font-size:13px;
-  color:var(--muted);
-  text-decoration:none;
-  font-weight:600;
+
+h1, h2 {
+  letter-spacing: -0.055em;
+  line-height: 1.1;
 }
-nav a:hover { color:var(--blue); }
-.menu-mobile { display:none; position:relative; }
-.menu-mobile summary {
-  cursor:pointer;
-  border:1px solid var(--line);
-  padding:8px 13px;
-  border-radius:8px;
-  list-style:none;
+
+.wrap {
+  width: min(calc(100% - 42px), var(--wrap));
+  margin-inline: auto;
 }
-.menu-mobile summary::-webkit-details-marker { display:none; }
-.menu-mobile .links {
-  position:absolute;
-  right:0;
-  top:calc(100% + 13px);
-  width:min(290px,calc(100vw - 42px));
-  background:#101820;
-  border:1px solid var(--line);
-  border-radius:13px;
-  padding:13px;
-  box-shadow:0 20px 50px #0009;
+
+.skip {
+  position: absolute;
+  top: -100px;
+  left: 10px;
+  background: var(--blue);
+  color: var(--bg);
+  padding: 10px;
+  z-index: 100;
 }
-.menu-mobile .links a {
-  display:block;
-  padding:10px 13px;
-  text-decoration:none;
-  color:var(--white);
+
+.skip:focus {
+  top: 10px;
 }
-.menu-mobile .links a:hover { background:#234e63; }
-.hero { padding:89px 0 55px; }
+
+/* =========================================
+   HEADER
+========================================= */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #050608f2;
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid #ffffff13;
+}
+
+.header-inner {
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 21px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  flex-shrink: 0;
+}
+
+.brand-mark {
+  font-size: 25px;
+  font-weight: 800;
+  letter-spacing: -0.09em;
+}
+
+.brand-mark span {
+  color: var(--blue);
+}
+
+.brand-sub {
+  font-size: 9px;
+  letter-spacing: 0.21em;
+  color: var(--muted);
+  border-left: 1px solid var(--border);
+  padding-left: 13px;
+}
+
+/* =========================================
+   NAVEGAÇÃO DESKTOP
+========================================= */
+
+.mobile-navigation {
+  display: contents;
+}
+
+.mobile-navigation > summary {
+  display: none;
+  list-style: none;
+  cursor: pointer;
+}
+
+.mobile-navigation > summary::-webkit-details-marker {
+  display: none;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: clamp(10px, 1.4vw, 21px);
+}
+
+.nav a {
+  font-size: 12px;
+  color: #b9c6d1;
+  transition: color 0.2s;
+}
+
+.nav a:hover {
+  color: var(--blue);
+}
+
+.nav .nav-github {
+  border: 1px solid var(--blue-deep);
+  padding: 9px 15px;
+  color: var(--blue);
+  border-radius: 3px;
+}
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+  position: relative;
+  min-height: 690px;
+
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1.618fr)
+    minmax(0, 1fr);
+
+  align-items: center;
+  gap: 34px;
+  padding-block: 89px;
+}
+
+.hero-copy {
+  min-width: 0;
+}
+
+.eyebrow,
+.hero-kicker,
+.hero-footnote,
+.hero-index,
+.timeline-num,
+.timeline-tag,
+.feature-top,
+.research-note,
+.tech-no,
+.project-label,
+.closing-line,
+.footer,
+.education-grid small {
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  font-weight: 650;
+}
+
 .eyebrow {
-  color:var(--blue);
-  text-transform:uppercase;
-  letter-spacing:3px;
-  font-size:12px;
-  font-weight:700;
+  color: var(--blue);
+  margin-bottom: 34px;
 }
+
+.status-dot {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--blue);
+  box-shadow: 0 0 15px var(--blue);
+  margin-right: 8px;
+}
+
+.eyebrow-line {
+  display: inline-block;
+  width: 21px;
+  height: 1px;
+  background: var(--blue-deep);
+  vertical-align: middle;
+  margin: 0 8px;
+}
+
+.hero-kicker {
+  color: var(--blue);
+  margin-bottom: 21px;
+}
+
+.hero-kicker span {
+  color: #476a7c;
+  padding-inline: 4px;
+}
+
 h1 {
-  font-size:clamp(42px,7vw,76px);
-  line-height:1.1;
-  letter-spacing:-2px;
-  margin:21px 0 34px;
+  font-size: clamp(3.1rem, 6.2vw, 6.4rem);
+  margin-bottom: 34px;
+  font-weight: 780;
+  overflow-wrap: break-word;
 }
-h1 span, h2 span { color:var(--blue); }
-h2 {
-  font-size:clamp(30px,4vw,48px);
-  line-height:1.18;
-  letter-spacing:-1px;
-  margin:13px 0 34px;
+
+.light {
+  font-weight: 400;
+  color: #d5e2ed;
 }
-h3 { font-size:21px; line-height:1.3; }
-p { margin:0 0 21px; }
-.prose p, .card p {
-  text-align:justify;
-  text-justify:inter-word;
-  hyphens:auto;
+
+.period {
+  color: var(--blue);
 }
-.lead {
-  font-size:clamp(19px,2.4vw,25px);
-  line-height:1.65;
-  color:#e0e8ef;
+
+.hero-lead {
+  font-size: clamp(1.4rem, 2.5vw, 2.2rem);
+  letter-spacing: -0.035em;
+  font-weight: 500;
+  margin-bottom: 13px;
 }
-.muted { color:var(--muted); }
-.buttons { display:flex; flex-wrap:wrap; gap:13px; margin-top:34px; }
-.btn {
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  min-height:48px;
-  padding:13px 21px;
-  border:1px solid #35576b;
-  border-radius:8px;
-  text-decoration:none;
-  color:var(--white);
-  font-weight:700;
-  font-size:14px;
-  transition:background .2s,transform .2s;
+
+.hero-lead em {
+  color: var(--blue);
+  font-style: normal;
 }
-.btn.primary { background:var(--blue); color:#051018; border-color:var(--blue); }
-.btn:hover { transform:translateY(-2px); background:#234e63; color:white; }
-.btn.primary:hover { background:#a5e8ff; color:#051018; }
-.hero-grid {
-  display:grid;
-  grid-template-columns:minmax(0,1.618fr) minmax(0,1fr);
-  align-items:center;
-  gap:34px;
+
+.hero-description {
+  max-width: 540px;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.9;
 }
-.ecg-panel {
-  position:relative;
-  aspect-ratio:1;
-  display:grid;
-  place-items:center;
-  overflow:hidden;
-  isolation:isolate;
-  background:radial-gradient(circle,#12314488 0%,#05060800 65%);
+
+/* =========================================
+   BOTÕES
+========================================= */
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px;
+  margin-top: 34px;
 }
-.ring {
-  position:absolute;
-  border:1px solid #73d7ff33;
-  border-radius:50%;
-  aspect-ratio:1;
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+
+  min-height: 49px;
+  padding: 12px 21px;
+
+  border: 1px solid transparent;
+  border-radius: 3px;
+
+  font-size: 13px;
+  font-weight: 700;
+  text-align: center;
+
+  transition:
+    transform 0.2s,
+    background 0.2s,
+    border-color 0.2s;
 }
-.ring.one { width:45%; }
-.ring.two { width:65%; border-style:dashed; }
-.ring.three { width:85%; }
-.ring.four { width:98%; opacity:.35; }
+
+.button:hover {
+  transform: translateY(-2px);
+}
+
+.primary {
+  background: var(--blue);
+  color: #071017;
+}
+
+.primary:hover {
+  background: var(--blue-soft);
+}
+
+.secondary {
+  border-color: #36596b;
+  color: var(--text);
+  background: #0d1b22;
+}
+
+.secondary:hover {
+  border-color: var(--blue);
+}
+
+.hero-footnote {
+  margin-top: 55px;
+  color: #6f899a;
+  font-size: 9px;
+}
+
+.hero-footnote span {
+  color: var(--blue);
+  padding-inline: 8px;
+}
+
+.hero-index {
+  position: absolute;
+  bottom: 21px;
+  left: 0;
+  color: #61788a;
+}
+
+/* =========================================
+   ECG FUTURISTA CENTRALIZADO
+========================================= */
+
+.hero-art {
+  position: relative;
+  min-height: 430px;
+  min-width: 0;
+  width: 100%;
+
+  display: grid;
+  place-items: center;
+  isolation: isolate;
+}
+
+.hero-art::before {
+  content: "";
+  position: absolute;
+  width: 90%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+
+  background: radial-gradient(
+    circle,
+    #1b8fc021,
+    transparent 66%
+  );
+
+  filter: blur(20px);
+  pointer-events: none;
+}
+
+.orb {
+  border: 1px solid #73d7ff29;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+.orb-outer {
+  width: min(100%, 400px);
+  aspect-ratio: 1;
+
+  box-shadow:
+    0 0 75px #1886b010,
+    inset 0 0 50px #1683b010;
+}
+
+.orb-outer::before,
+.orb-outer::after {
+  content: "";
+  position: absolute;
+  border: 1px dashed #73d7ff36;
+  border-radius: 50%;
+  inset: 21px;
+}
+
+.orb-outer::after {
+  inset: -21px;
+  border-style: solid;
+  border-color: #73d7ff0b;
+}
+
+.orb-middle {
+  width: 65%;
+  aspect-ratio: 1;
+  border-color: #73d7ff6b;
+  box-shadow: 0 0 30px #73d7ff13;
+}
+
+.orb-inner {
+  width: 62%;
+  aspect-ratio: 1;
+
+  background: radial-gradient(
+    circle,
+    #173648,
+    #091018 75%
+  );
+
+  box-shadow:
+    0 0 45px #73d7ff1c,
+    inset 0 0 25px #73d7ff15;
+}
+
+/* Sem letras FL no centro do ECG */
+
 .ecg {
-  position:relative;
-  z-index:2;
-  width:100%;
-  height:auto;
-  overflow:visible;
-  filter:drop-shadow(0 0 7px #73d7ff55);
+  position: absolute;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+
+  overflow: visible;
+  pointer-events: none;
+
+  filter: drop-shadow(0 0 8px #73d7ff70);
 }
-.ecg path {
-  fill:none;
-  stroke:var(--blue);
-  stroke-width:2.4;
-  stroke-linecap:round;
-  stroke-linejoin:round;
-  stroke-dasharray:650;
-  stroke-dashoffset:650;
-  animation:trace 5s linear infinite;
+
+.ecg-path {
+  fill: none;
+  stroke: url(#ecgGradient);
+  stroke-width: 2.2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+
+  stroke-dasharray: 850;
+  stroke-dashoffset: 850;
+
+  animation: drawECG 5s ease-in-out infinite;
 }
-@keyframes trace {
-  0% { stroke-dashoffset:650; opacity:.4; }
-  65%,90% { stroke-dashoffset:0; opacity:1; }
-  100% { stroke-dashoffset:-650; opacity:.4; }
+
+@keyframes drawECG {
+  0% {
+    stroke-dashoffset: 850;
+    opacity: 0.3;
+  }
+
+  40%, 75% {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+
+  100% {
+    stroke-dashoffset: -850;
+    opacity: 0.25;
+  }
 }
-section { padding:89px 0; border-top:1px solid var(--line); }
-.section-label {
-  font-size:12px;
-  letter-spacing:3px;
-  color:var(--blue);
-  font-weight:700;
-  text-transform:uppercase;
+
+.art-corner {
+  position: absolute;
+  color: #60859a;
+  font-size: 9px;
+  letter-spacing: 0.16em;
 }
-.grid {
-  display:grid;
-  grid-template-columns:repeat(2,minmax(0,1fr));
-  gap:21px;
+
+.art-corner.top {
+  top: 13px;
+  right: 0;
 }
-.card {
-  padding:34px;
-  border:1px solid var(--line);
-  border-radius:13px;
-  background:linear-gradient(145deg,#101a22,#070a0e);
+
+.art-corner.bottom {
+  bottom: 55px;
+  left: 0;
 }
-.card h3 { margin-top:0; }
-.tag {
-  display:inline-block;
-  font-size:11px;
-  letter-spacing:1px;
-  text-transform:uppercase;
-  color:var(--blue);
-  margin-bottom:13px;
+
+/* =========================================
+   FAIXA CONCEITUAL
+========================================= */
+
+.ticker {
+  border-block: 1px solid var(--border);
+  background: #0a1117;
+  padding: 21px 0;
+
+  color: #dcecf4;
+  text-align: center;
+
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  font-weight: 650;
 }
-.timeline { border-left:1px solid var(--blue-deep); padding-left:21px; }
-.timeline-item { position:relative; padding:0 0 34px; }
-.timeline-item::before {
-  content:"";
-  position:absolute;
-  width:9px;
-  height:9px;
-  border-radius:50%;
-  background:var(--blue);
-  left:-26px;
-  top:9px;
+
+.ticker span,
+.closing-line span {
+  color: var(--blue);
+  padding-inline: 21px;
 }
-.timeline-item strong { color:var(--blue); }
-.timeline-item h3 { margin:5px 0; }
-.stats {
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:21px;
-  padding-top:34px;
-  border-top:1px solid var(--line);
+
+/* =========================================
+   SEÇÕES
+========================================= */
+
+.section {
+  padding-block: clamp(89px, 10vw, 144px);
 }
-.stats strong { color:var(--blue); font-size:28px; }
-.stats small { display:block; color:var(--muted); font-size:11px; letter-spacing:1px; }
-footer { padding:55px 0; border-top:1px solid var(--line); text-align:center; }
-footer .motto { letter-spacing:2px; color:var(--blue); font-size:12px; }
-@media(max-width:800px) {
-  .desktop-nav { display:none; }
-  .menu-mobile { display:block; }
-  .hero-grid { grid-template-columns:1fr; }
-  .ecg-panel { width:min(100%,520px); margin:auto; }
-  .grid { grid-template-columns:1fr; }
+
+.section-alt {
+  background: linear-gradient(
+    145deg,
+    #0c1117,
+    #080b10
+  );
+
+  border-block: 1px solid #ffffff0c;
 }
-@media(max-width:480px) {
-  .hero { padding:55px 0; }
-  section { padding:55px 0; }
-  h1 { letter-spacing:-1.5px; }
-  .buttons { flex-direction:column; }
-  .btn { width:100%; }
-  .card { padding:21px; }
-  .stats { gap:8px; }
-  .stats strong { font-size:24px; }
-  .stats small { font-size:9px; }
+
+.section-heading {
+  margin-bottom: 55px;
 }
-@media(prefers-reduced-motion:reduce) {
-  html { scroll-behavior:auto; }
-  .ecg path { animation:none; stroke-dashoffset:0; }
-  .btn { transition:none; }
+
+h2 {
+  font-size: clamp(2.35rem, 5vw, 4.5rem);
+  font-weight: 680;
 }
+
+h2 .accent {
+  color: var(--blue);
+  font-weight: 440;
+}
+
+.section-intro {
+  max-width: 680px;
+  color: var(--muted);
+  font-size: 17px;
+  margin-top: 21px;
+}
+
+/* =========================================
+   PERFIL
+========================================= */
+
+.split {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1.618fr)
+    minmax(0, 1fr);
+
+  gap: 89px;
+}
+
+.split > * {
+  min-width: 0;
+}
+
+.split p {
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.split .body-large {
+  font-size: clamp(1.25rem, 2.2vw, 1.9rem);
+  line-height: 1.6;
+  color: #e5edf2;
+}
+
+.facts {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 13px;
+
+  border-top: 1px solid var(--border);
+  padding-top: 21px;
+  margin-top: 34px;
+}
+
+.facts span {
+  display: block;
+  color: var(--blue);
+  font-size: 24px;
+  font-weight: 650;
+}
+
+.facts small {
+  display: block;
+  color: var(--muted);
+  font-size: 9px;
+  line-height: 1.6;
+  letter-spacing: 0.07em;
+  overflow-wrap: anywhere;
+}
+
+/* =========================================
+   TRAJETÓRIA
+========================================= */
+
+.timeline {
+  border-top: 1px solid var(--border);
+}
+
+.timeline article {
+  display: grid;
+  grid-template-columns: 60px minmax(0, 1fr) auto;
+  align-items: start;
+  gap: 34px;
+
+  padding: 34px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.timeline-num {
+  color: var(--blue);
+}
+
+.timeline h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.timeline p {
+  font-size: 14px;
+  color: var(--muted);
+  margin: 0;
+}
+
+.timeline-tag {
+  font-size: 9px;
+  color: #7797a9;
+  border: 1px solid var(--border);
+  padding: 5px 9px;
+}
+
+/* =========================================
+   PESQUISA
+========================================= */
+
+.research-grid {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1.618fr)
+    minmax(0, 1fr);
+
+  gap: 21px;
+}
+
+.feature {
+  min-height: 400px;
+  min-width: 0;
+
+  border: 1px solid #284454;
+  padding: clamp(21px, 3vw, 55px);
+
+  display: flex;
+  flex-direction: column;
+
+  background:
+    radial-gradient(
+      circle at 100% 0%,
+      #1233465c,
+      transparent 50%
+    ),
+    #0b1219;
+}
+
+.feature.muted {
+  background: #0b0f14;
+  border-color: var(--border);
+}
+
+.feature-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 13px;
+
+  color: var(--blue);
+  font-size: 9px;
+  margin-bottom: 55px;
+}
+
+.feature-top span:last-child {
+  color: #718fa0;
+}
+
+.feature h3 {
+  font-size: clamp(1.4rem, 2.3vw, 2rem);
+  line-height: 1.35;
+  letter-spacing: -0.025em;
+}
+
+.feature p {
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.feature .meta {
+  margin-top: auto;
+  padding-top: 21px;
+  font-size: 12px;
+}
+
+.text-link {
+  color: var(--blue);
+  font-size: 13px;
+  font-weight: 700;
+  margin-top: 13px;
+}
+
+.text-link:hover {
+  text-decoration: underline;
+}
+
+.research-note {
+  color: #7591a2;
+  margin-top: auto;
+}
+
+/* =========================================
+   MEDICINA × TECNOLOGIA
+========================================= */
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 13px;
+}
+
+.tech-grid article {
+  padding: 34px 21px;
+  border: 1px solid var(--border);
+  background: #0b1015;
+  min-height: 250px;
+}
+
+.tech-no {
+  color: var(--blue);
+}
+
+.tech-grid h3 {
+  font-size: 19px;
+  line-height: 1.3;
+  margin: 34px 0 13px;
+}
+
+.tech-grid p {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.data-flow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 13px;
+
+  margin-top: 55px;
+  font-size: 10px;
+  letter-spacing: 0.13em;
+  color: #b8c8d3;
+}
+
+.data-flow b {
+  color: var(--blue);
+}
+
+/* =========================================
+   PROJETOS
+========================================= */
+
+.project-panel {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1.618fr)
+    minmax(0, 1fr);
+
+  gap: 34px;
+  background: #0b1219;
+  border: 1px solid var(--border);
+  padding: clamp(21px, 4vw, 55px);
+}
+
+.project-panel > * {
+  min-width: 0;
+}
+
+.project-label {
+  color: var(--blue);
+  font-size: 10px;
+}
+
+.project-panel h3 {
+  font-size: clamp(1.7rem, 3vw, 2.7rem);
+  letter-spacing: -0.04em;
+  margin: 34px 0 21px;
+}
+
+.project-panel p {
+  color: var(--muted);
+  max-width: 600px;
+}
+
+.project-panel .button {
+  margin-top: 21px;
+}
+
+.project-graphic {
+  min-height: 260px;
+  border: 1px solid #24475a;
+
+  background:
+    repeating-linear-gradient(
+      0deg,
+      transparent 0 54px,
+      #73d7ff12 54px 55px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      transparent 0 54px,
+      #73d7ff12 54px 55px
+    );
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 21px;
+  color: var(--blue);
+}
+
+.project-graphic > span {
+  font-size: 60px;
+  line-height: 1;
+  font-weight: 200;
+}
+
+.code-lines {
+  font-family: ui-monospace, monospace;
+  font-size: 14px;
+  line-height: 2;
+  color: #a5d9f0;
+}
+
+/* =========================================
+   FORMAÇÃO COMPLEMENTAR
+========================================= */
+
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 21px;
+}
+
+.education-grid > div {
+  border-top: 2px solid var(--blue-deep);
+  padding-top: 21px;
+}
+
+.education-grid h3 {
+  font-size: 20px;
+}
+
+.education-grid p {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.education-grid small {
+  color: var(--blue);
+  font-size: 9px;
+}
+
+/* =========================================
+   CONTATO
+========================================= */
+
+.contact {
+  text-align: center;
+}
+
+.contact .eyebrow {
+  margin-bottom: 21px;
+}
+
+.contact p:not(.eyebrow) {
+  max-width: 580px;
+  margin: 0 auto 34px;
+  color: var(--muted);
+}
+
+.closing-line {
+  border-top: 1px solid var(--border);
+  padding-top: 55px;
+  margin-top: 89px;
+  color: #dcecf4;
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.footer {
+  border-top: 1px solid var(--border);
+  padding: 34px 0;
+  color: #7790a0;
+  font-size: 10px;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 21px;
+  flex-wrap: wrap;
+}
+
+.footer a:hover {
+  color: var(--blue);
+}
+
+/* =========================================
+   ALINHAMENTO JUSTIFICADO
+========================================= */
+
+.hero-description,
+.section-intro,
+.split > p,
+.split > div > p,
+.timeline article p,
+.feature > p:not(.meta),
+.tech-grid article p,
+.project-panel p,
+.education-grid p,
+.contact > p:not(.eyebrow) {
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  overflow-wrap: break-word;
+}
+
+/* =========================================
+   TABLETS
+========================================= */
+
+@media (max-width: 1050px) {
+
+  .brand-sub {
+    display: none;
+  }
+
+  .nav {
+    gap: 10px;
+  }
+
+  .nav a {
+    font-size: 11px;
+  }
+
+  .hero {
+    min-height: 600px;
+  }
+
+  .tech-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* =========================================
+   MENU MOBILE — CORREÇÃO DEFINITIVA
+========================================= */
+
+@media (max-width: 760px) {
+
+  .header-inner {
+    min-height: 69px;
+  }
+
+  .mobile-navigation {
+    display: block;
+    margin-left: auto;
+  }
+
+  .mobile-navigation > summary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 13px;
+
+    min-height: 44px;
+    padding: 8px 13px;
+
+    background: #0b0e12;
+    color: var(--text);
+
+    border: 1px solid var(--border);
+    border-radius: 5px;
+
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+  .mobile-navigation[open] > summary {
+    border-color: var(--blue);
+    color: var(--blue);
+  }
+
+  .mobile-navigation .nav {
+    display: none;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+
+    width: 100%;
+    max-width: 100vw;
+
+    max-height: calc(100vh - 69px);
+    max-height: calc(100dvh - 69px);
+
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    padding: 13px 21px 21px;
+    margin: 0;
+
+    background: #0b1219;
+    border: 1px solid var(--blue-deep);
+    border-radius: 0 0 13px 13px;
+
+    box-shadow: 0 21px 55px #000a;
+
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+
+    z-index: 999;
+  }
+
+  .mobile-navigation[open] .nav {
+    display: flex;
+  }
+
+  .mobile-navigation .nav a {
+    display: block;
+    flex: 0 0 auto;
+
+    width: 100%;
+    min-width: 0;
+
+    padding: 13px;
+    margin: 0;
+
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: left;
+
+    white-space: normal;
+    overflow-wrap: break-word;
+
+    color: var(--text);
+    border-bottom: 1px solid #ffffff12;
+  }
+
+  .mobile-navigation .nav a:hover,
+  .mobile-navigation .nav a:focus-visible {
+    background: #172f40;
+    color: var(--blue);
+    border-radius: 5px;
+  }
+
+  .mobile-navigation .nav .nav-github {
+    margin-top: 13px;
+    border: 1px solid var(--blue-deep);
+    border-radius: 5px;
+    text-align: center;
+    color: var(--blue);
+  }
+
+  /* HERO MOBILE */
+
+  .hero {
+    grid-template-columns: minmax(0, 1fr);
+    padding-top: 55px;
+    padding-bottom: 89px;
+    gap: 34px;
+  }
+
+  .hero-art {
+    min-height: 340px;
+    max-width: 430px;
+    width: 100%;
+    margin-inline: auto;
+  }
+
+  .orb-outer {
+    width: 300px;
+  }
+
+  .hero-index {
+    bottom: 21px;
+  }
+
+  .hero-footnote {
+    margin-top: 34px;
+  }
+
+  /* GRIDS MOBILE */
+
+  .split,
+  .research-grid,
+  .project-panel {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 34px;
+  }
+
+  .timeline article {
+    grid-template-columns: 30px minmax(0, 1fr);
+    gap: 13px;
+  }
+
+  .timeline-tag {
+    grid-column: 2;
+    justify-self: start;
+  }
+
+  .education-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .section-heading {
+    margin-bottom: 34px;
+  }
+
+  .feature {
+    min-height: 300px;
+  }
+
+  .feature-top {
+    margin-bottom: 34px;
+  }
+
+  .closing-line span,
+  .ticker span {
+    padding-inline: 5px;
+  }
+
+  .closing-line {
+    line-height: 2.8;
+  }
+
+  .project-graphic {
+    min-height: 180px;
+  }
+}
+
+/* =========================================
+   CELULARES PEQUENOS
+========================================= */
+
+@media (max-width: 430px) {
+
+  .wrap {
+    width: calc(100% - 34px);
+  }
+
+  .hero {
+    padding-top: 55px;
+  }
+
+  .hero-art {
+    min-height: 280px;
+  }
+
+  .orb-outer {
+    width: min(235px, 75vw);
+  }
+
+  .hero-kicker {
+    font-size: 9px;
+  }
+
+  .hero-footnote {
+    font-size: 8px;
+    line-height: 2;
+  }
+
+  .facts {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .facts span {
+    font-size: 20px;
+  }
+
+  .facts small {
+    font-size: 8px;
+  }
+
+  .tech-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .tech-grid article {
+    min-height: 0;
+  }
+
+  .ticker {
+    font-size: 9px;
+  }
+
+  .button {
+    width: 100%;
+  }
+
+  .art-corner {
+    display: none;
+  }
+}
+
+/* =========================================
+   ACESSIBILIDADE
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .ecg-path {
+    stroke-dashoffset: 0;
+  }
+}
+
 </style>
 </head>
+
 <body>
 
-<header>
-  <div class="container navbar">
-    <a class="logo" href="#inicio" aria-label="Início">FL<span>.</span></a>
+<a class="skip" href="#conteudo">
+  Pular para o conteúdo
+</a>
 
-    <nav class="desktop-nav" aria-label="Navegação principal">
-      <a href="#perfil">Perfil</a>
-      <a href="#trajetoria">Trajetória</a>
-      <a href="#pesquisa">Pesquisa</a>
-      <a href="#tecnologia">Tecnologia</a>
-      <a href="#projetos">Projetos</a>
-      <a href="#contato">Contato</a>
-      <a href="https://github.com/felipedlacerda/Hub-Acad-mico-Profissional"
-         target="_blank" rel="noopener noreferrer">GitHub ↗</a>
-    </nav>
+<!-- =====================================
+     HEADER
+===================================== -->
 
-    <details class="menu-mobile">
-      <summary>Menu ☰</summary>
-      <nav class="links" aria-label="Navegação mobile">
+<header class="site-header">
+
+  <div class="wrap header-inner">
+
+    <a class="brand" href="#inicio"
+       aria-label="Felipe de Lacerda Pereira — início">
+
+      <span class="brand-mark">
+        FL<span>.</span>
+      </span>
+
+      <span class="brand-sub">
+        RESEARCH / TECHNOLOGY
+      </span>
+
+    </a>
+
+    <details class="mobile-navigation">
+
+      <summary aria-label="Abrir ou fechar menu de navegação">
+        Menu
+        <span aria-hidden="true">☰</span>
+      </summary>
+
+      <nav class="nav" aria-label="Navegação principal">
+
         <a href="#inicio">Início</a>
         <a href="#perfil">Perfil</a>
         <a href="#trajetoria">Trajetória</a>
@@ -314,219 +1382,778 @@ footer .motto { letter-spacing:2px; color:var(--blue); font-size:12px; }
         <a href="#projetos">Projetos</a>
         <a href="#formacao">Formação</a>
         <a href="#contato">Contato</a>
-        <a href="https://github.com/felipedlacerda/Hub-Acad-mico-Profissional"
-           target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+
+        <a
+          class="nav-github"
+          href="https://github.com/felipedlacerda/Hub-Acad-mico-Profissional"
+          target="_blank"
+          rel="noopener noreferrer">
+          GitHub ↗
+        </a>
+
       </nav>
+
     </details>
+
   </div>
+
 </header>
 
-<main>
-<section class="hero" id="inicio">
-  <div class="container hero-grid">
-    <div>
-      <div class="eyebrow">Medicina × Ciência × Tecnologia</div>
-      <h1>Felipe de<br><span>Lacerda Pereira.</span></h1>
-      <p class="lead">Da prática clínica à pesquisa científica. Da informação ao conhecimento. Da tecnologia à decisão.</p>
-      <p class="muted">Clínica Médica · Oncologia · Engenharia de Software · Inteligência Artificial</p>
-      <div class="buttons">
-        <a class="btn primary" href="#trajetoria">Explorar trajetória ↘</a>
-        <a class="btn" href="https://github.com/felipedlacerda/Hub-Acad-mico-Profissional"
-           target="_blank" rel="noopener noreferrer">Acessar meu GitHub ↗</a>
-      </div>
-    </div>
+<main id="conteudo">
 
-    <div class="ecg-panel" aria-label="Eletrocardiograma estilizado com ondas P, QRS e T">
-      <div class="ring one"></div>
-      <div class="ring two"></div>
-      <div class="ring three"></div>
-      <div class="ring four"></div>
-      <svg class="ecg" viewBox="0 0 400 200" role="img" aria-label="Traçado eletrocardiográfico centralizado">
-        <path d="M0 100 L52 100 L69 91 L84 100 L135 100 L160 100 L180 48 L203 157 L225 100 L263 100 L285 84 L305 100 L400 100"/>
-      </svg>
-    </div>
-  </div>
-</section>
+<!-- =====================================
+     HERO
+===================================== -->
 
-<section id="perfil">
-  <div class="container prose">
-    <div class="section-label">01 — Introduction</div>
-    <h2>Entre a ciência e<br><span>o cuidado humano.</span></h2>
-    <p class="lead">Médico graduado pelo Centro Universitário de Brasília em 2022, especialista em Clínica Médica pelo Hospital de Base do Distrito Federal, com residência concluída em 2026.</p>
-    <p class="muted">Minha trajetória reúne assistência médica, pesquisa científica e tecnologia, com experiência em Medicina Intensiva e formação complementar em diferentes áreas clínicas.</p>
-    <p class="muted">Direciono meus estudos à Oncologia Clínica, com interesse especial em medicina de precisão, genômica, inteligência artificial e desenvolvimento de tecnologias em saúde.</p>
-    <div class="stats">
-      <div><strong>2022</strong><small>MEDICINA / UniCEUB</small></div>
-      <div><strong>2026</strong><small>CLÍNICA MÉDICA / HBDF</small></div>
-      <div><strong>∞</strong><small>CIÊNCIA E APRENDIZADO</small></div>
-    </div>
-  </div>
-</section>
+<section class="hero wrap" id="inicio">
 
-<section id="trajetoria">
-  <div class="container">
-    <div class="section-label">02 — Trajetória</div>
-    <h2>Formação e <span>experiência.</span></h2>
-    <div class="timeline">
-      <div class="timeline-item">
-        <strong>2026</strong>
-        <h3>Hospital de Base do Distrito Federal</h3>
-        <p class="muted">Conclusão da residência médica em Clínica Médica.</p>
-      </div>
-      <div class="timeline-item">
-        <strong>2026 — Em andamento</strong>
-        <h3>Engenharia de Software — UniCEUB</h3>
-        <p class="muted">Formação em desenvolvimento de sistemas, lógica de programação, requisitos e fundamentos de engenharia.</p>
-      </div>
-      <div class="timeline-item">
-        <strong>2025</strong>
-        <h3>Universidade de Rio Verde</h3>
-        <p class="muted">Atuação em docência médica na disciplina de Habilidades de Cardiologia.</p>
-      </div>
-      <div class="timeline-item">
-        <strong>2022</strong>
-        <h3>Centro Universitário de Brasília</h3>
-        <p class="muted">Conclusão da graduação em Medicina.</p>
-      </div>
-    </div>
-    <p class="muted prose">Experiências complementares incluem Medicina Intensiva Oncológica em Barretos, Onco-Hematologia Pediátrica no Hospital da Criança de Brasília e Nefrologia na Beneficência Portuguesa de São Paulo.</p>
-  </div>
-</section>
+  <div class="hero-copy">
 
-<section id="pesquisa">
-  <div class="container">
-    <div class="section-label">03 — Research</div>
-    <h2>Pesquisa e <span>publicações.</span></h2>
-    <div class="grid">
-      <article class="card">
-        <span class="tag">Publicação científica</span>
-        <h3>Beyond Prognosis: Identity, Meaning, and Existential Uncertainty After Severe Brain Injury</h3>
-        <p class="muted">Palliative &amp; Supportive Care — Cambridge University Press.</p>
-        <p class="muted">Pesquisa relacionada às dimensões humanas, existenciais e clínicas após lesão cerebral grave.</p>
-        <a href="https://doi.org/10.1017/S1478951526103216"
-           target="_blank" rel="noopener noreferrer">Acessar publicação ↗</a>
-      </article>
-      <article class="card">
-        <span class="tag">Iniciação científica</span>
-        <h3>Lipidômica das impressões digitais</h3>
-        <p class="muted">Pesquisa envolvendo espectrometria de massas e análise molecular.</p>
-        <p class="muted">Integração entre métodos analíticos, investigação científica e interpretação de dados.</p>
-      </article>
-    </div>
-  </div>
-</section>
+    <p class="eyebrow">
+      <span class="status-dot"></span>
+      BRASÍLIA, BRASIL
+      <span class="eyebrow-line"></span>
+      PORTFÓLIO ACADÊMICO
+    </p>
 
-<section id="tecnologia">
-  <div class="container">
-    <div class="section-label">04 — Medicine × Technology</div>
-    <h2>Do dado à <span>decisão clínica.</span></h2>
-    <p class="lead prose">A integração entre ciência biomédica e engenharia computacional abre possibilidades para pesquisa, análise de dados e desenvolvimento de soluções em saúde.</p>
-    <div class="grid">
-      <article class="card">
-        <span class="tag">01 / Computational Medicine</span>
-        <h3>Inteligência Artificial</h3>
-        <p class="muted">Interesse na aplicação de algoritmos, aprendizado de máquina e modelos computacionais a problemas médicos.</p>
-      </article>
-      <article class="card">
-        <span class="tag">02 / Precision Medicine</span>
-        <h3>Genômica</h3>
-        <p class="muted">Estudo de biomarcadores, medicina de precisão e aplicações moleculares em Oncologia.</p>
-      </article>
-      <article class="card">
-        <span class="tag">03 / Data Engineering</span>
-        <h3>Ciência de Dados</h3>
-        <p class="muted">Organização, modelagem e análise de dados para produção de conhecimento científico.</p>
-      </article>
-      <article class="card">
-        <span class="tag">04 / Software Engineering</span>
-        <h3>Engenharia de Software</h3>
-        <p class="muted">Formação em lógica de programação, engenharia de requisitos, modelagem de bancos de dados e desenvolvimento de sistemas.</p>
-      </article>
-    </div>
-  </div>
-</section>
+    <p class="hero-kicker">
+      MEDICINA <span>×</span>
+      CIÊNCIA <span>×</span>
+      TECNOLOGIA
+    </p>
 
-<section id="projetos">
-  <div class="container">
-    <div class="section-label">05 — Projects</div>
-    <h2>Projetos e <span>desenvolvimento.</span></h2>
-    <div class="grid">
-      <article class="card">
-        <span class="tag">Portfólio acadêmico</span>
-        <h3>Hub Acadêmico &amp; Profissional</h3>
-        <p class="muted">Projeto de identidade digital, documentação acadêmica e integração entre Medicina, pesquisa e tecnologia.</p>
-        <a href="https://github.com/felipedlacerda/Hub-Acad-mico-Profissional"
-           target="_blank" rel="noopener noreferrer">Ver repositório ↗</a>
-      </article>
-      <article class="card">
-        <span class="tag">Desenvolvimento contínuo</span>
-        <h3>Engenharia de Requisitos em Saúde</h3>
-        <p class="muted">Área de estudo voltada à identificação, especificação e validação de necessidades em sistemas clínicos e hospitalares.</p>
-      </article>
-    </div>
-  </div>
-</section>
+    <h1>
+      Felipe de<br>
+      <span class="light">Lacerda Pereira</span><span class="period">.</span>
+    </h1>
 
-<section id="formacao">
-  <div class="container">
-    <div class="section-label">06 — Continuous Learning</div>
-    <h2>Conhecimento em <span>evolução.</span></h2>
-    <div class="grid">
-      <article class="card">
-        <h3>Formação médica</h3>
-        <p class="muted">Clínica Médica, Medicina Intensiva, pesquisa científica e experiências em especialidades clínicas.</p>
-      </article>
-      <article class="card">
-        <h3>Formação tecnológica</h3>
-        <p class="muted">Engenharia de Software, Python, bancos de dados, engenharia de requisitos e estudos em Inteligência Artificial.</p>
-      </article>
-      <article class="card">
-        <h3>Interoperabilidade</h3>
-        <p class="muted">Interesse em padrões de dados em saúde, incluindo HL7 FHIR, e integração entre sistemas hospitalares.</p>
-      </article>
-      <article class="card">
-        <h3>Idiomas</h3>
-        <p class="muted">Português — nativo. Inglês — avançado. Mandarim — em desenvolvimento.</p>
-      </article>
-    </div>
-  </div>
-</section>
+    <p class="hero-lead">
+      Do dado à <em>decisão clínica.</em>
+    </p>
 
-<section id="contato">
-  <div class="container">
-    <div class="section-label">07 — Contact</div>
-    <h2>Ciência, colaboração <span>e futuro.</span></h2>
-    <p class="lead">Conectar Medicina, pesquisa e Engenharia de Software para transformar informação em conhecimento e conhecimento em impacto.</p>
-    <div class="buttons">
-      <a class="btn primary"
-         href="https://github.com/felipedlacerda/Hub-Acad-mico-Profissional"
-         target="_blank" rel="noopener noreferrer">
-        Visitar meu GitHub ↗
+    <p class="hero-description">
+      Da prática clínica à pesquisa científica.
+      Da informação ao conhecimento.
+      Da tecnologia à decisão.
+    </p>
+
+    <div class="actions">
+
+      <a class="button primary" href="#trajetoria">
+        Explorar trajetória ↘
       </a>
+
+      <a
+        class="button secondary"
+        href="https://github.com/felipedlacerda/Hub-Acad-mico-Profissional"
+        target="_blank"
+        rel="noopener noreferrer">
+        Acessar meu GitHub ↗
+      </a>
+
     </div>
+
+    <p class="hero-footnote">
+      CLÍNICA MÉDICA
+      <span>/</span>
+      ONCOLOGIA
+      <span>/</span>
+      ENGENHARIA DE SOFTWARE
+    </p>
+
   </div>
+
+  <!-- ECG SEM FL CENTRAL -->
+
+  <div
+    class="hero-art"
+    role="img"
+    aria-label="Eletrocardiograma futurista azul centralizado em círculos concêntricos">
+
+    <div class="orb orb-outer">
+      <div class="orb orb-middle">
+        <div class="orb orb-inner"></div>
+      </div>
+    </div>
+
+    <svg
+      class="ecg"
+      viewBox="0 0 620 130"
+      preserveAspectRatio="xMidYMid meet"
+      aria-hidden="true">
+
+      <defs>
+        <linearGradient id="ecgGradient" x1="0" x2="1">
+          <stop offset="0" stop-color="#234E63"/>
+          <stop offset=".5" stop-color="#73D7FF"/>
+          <stop offset="1" stop-color="#234E63"/>
+        </linearGradient>
+      </defs>
+
+      <path
+        class="ecg-path"
+        d="
+          M0 65
+          H185
+          L210 65
+          L229 53
+          L248 65
+          H269
+          L293 15
+          L319 116
+          L344 65
+          H365
+          L389 47
+          L412 65
+          H620
+        "
+      />
+
+    </svg>
+
+    <span class="art-corner top">
+      + SYSTEM ACTIVE
+    </span>
+
+    <span class="art-corner bottom">
+      φ 1.6180339
+    </span>
+
+  </div>
+
+  <div class="hero-index">
+    01 — INTRODUCTION
+  </div>
+
 </section>
+
+<!-- =====================================
+     FILOSOFIA
+===================================== -->
+
+<div class="ticker" aria-hidden="true">
+  <div class="wrap">
+    PESSOAS <span>→</span>
+    CIÊNCIA <span>→</span>
+    DADOS <span>→</span>
+    DECISÃO <span>→</span>
+    IMPACTO
+  </div>
+</div>
+
+<!-- =====================================
+     PERFIL
+===================================== -->
+
+<section class="section wrap" id="perfil">
+
+  <div class="section-heading">
+
+    <p class="eyebrow">01 / PERFIL</p>
+
+    <h2>
+      Entre a ciência e<br>
+      <span class="accent">o cuidado humano.</span>
+    </h2>
+
+  </div>
+
+  <div class="split">
+
+    <p class="body-large">
+      Médico graduado pelo Centro Universitário de Brasília
+      em 2022, especialista em Clínica Médica pelo Hospital
+      de Base do Distrito Federal, com residência concluída
+      em 2026.
+    </p>
+
+    <div>
+
+      <p>
+        Minha trajetória reúne assistência médica,
+        pesquisa científica e tecnologia, com experiência
+        em Medicina Intensiva e formação complementar
+        em diferentes áreas clínicas.
+      </p>
+
+      <p>
+        Direciono meus estudos à Oncologia Clínica,
+        com interesse especial em medicina de precisão,
+        genômica, inteligência artificial e desenvolvimento
+        de tecnologias em saúde.
+      </p>
+
+      <div class="facts">
+
+        <div>
+          <span>2022</span>
+          <small>MEDICINA / UniCEUB</small>
+        </div>
+
+        <div>
+          <span>2026</span>
+          <small>CLÍNICA MÉDICA / HBDF</small>
+        </div>
+
+        <div>
+          <span>∞</span>
+          <small>CIÊNCIA E APRENDIZADO</small>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- =====================================
+     TRAJETÓRIA
+===================================== -->
+
+<section class="section section-alt" id="trajetoria">
+
+  <div class="wrap">
+
+    <div class="section-heading">
+
+      <p class="eyebrow">02 / TRAJETÓRIA</p>
+
+      <h2>
+        Experiência construída<br>
+        <span class="accent">em diferentes contextos.</span>
+      </h2>
+
+    </div>
+
+    <div class="timeline">
+
+      <article>
+        <span class="timeline-num">01</span>
+        <div>
+          <h3>Clínica Médica</h3>
+          <p>
+            Hospital de Base do Distrito Federal —
+            residência médica concluída em 2026.
+          </p>
+        </div>
+        <span class="timeline-tag">FORMAÇÃO</span>
+      </article>
+
+      <article>
+        <span class="timeline-num">02</span>
+        <div>
+          <h3>Medicina Intensiva</h3>
+          <p>
+            Atuação assistencial em Unidade de Terapia
+            Intensiva Geral.
+          </p>
+        </div>
+        <span class="timeline-tag">ASSISTÊNCIA</span>
+      </article>
+
+      <article>
+        <span class="timeline-num">03</span>
+        <div>
+          <h3>Medicina Intensiva Oncológica</h3>
+          <p>Hospital de Câncer de Barretos.</p>
+        </div>
+        <span class="timeline-tag">EXPERIÊNCIA</span>
+      </article>
+
+      <article>
+        <span class="timeline-num">04</span>
+        <div>
+          <h3>Onco-Hematologia Pediátrica</h3>
+          <p>
+            Hospital da Criança de Brasília José Alencar.
+          </p>
+        </div>
+        <span class="timeline-tag">EXPERIÊNCIA</span>
+      </article>
+
+      <article>
+        <span class="timeline-num">05</span>
+        <div>
+          <h3>Nefrologia</h3>
+          <p>Beneficência Portuguesa de São Paulo.</p>
+        </div>
+        <span class="timeline-tag">EXPERIÊNCIA</span>
+      </article>
+
+      <article>
+        <span class="timeline-num">06</span>
+        <div>
+          <h3>Docência Médica</h3>
+          <p>
+            Habilidades de Cardiologia —
+            Universidade de Rio Verde.
+          </p>
+        </div>
+        <span class="timeline-tag">DOCÊNCIA</span>
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- =====================================
+     PESQUISA
+===================================== -->
+
+<section class="section wrap" id="pesquisa">
+
+  <div class="section-heading">
+
+    <p class="eyebrow">03 / PESQUISA</p>
+
+    <h2>
+      Conhecimento que<br>
+      <span class="accent">transcende disciplinas.</span>
+    </h2>
+
+  </div>
+
+  <div class="research-grid">
+
+    <article class="feature">
+
+      <div class="feature-top">
+        <span>PUBLICAÇÃO CIENTÍFICA</span>
+        <span>2026 / CAMBRIDGE</span>
+      </div>
+
+      <h3>
+        Beyond Prognosis: Identity, Meaning, and
+        Existential Uncertainty After Severe Brain Injury
+      </h3>
+
+      <p>
+        Uma reflexão sobre identidade, significado e
+        incerteza após lesão cerebral grave, na interface
+        entre prognóstico, tomada de decisão e cuidados
+        paliativos.
+      </p>
+
+      <p class="meta">
+        Palliative &amp; Supportive Care ·
+        Cambridge University Press
+      </p>
+
+      <a
+        class="text-link"
+        href="https://doi.org/10.1017/S1478951526103216"
+        target="_blank"
+        rel="noopener noreferrer">
+        Ler publicação / DOI ↗
+      </a>
+
+    </article>
+
+    <article class="feature muted">
+
+      <div class="feature-top">
+        <span>INICIAÇÃO CIENTÍFICA</span>
+        <span>UniCEUB</span>
+      </div>
+
+      <h3>
+        Lipidômica de impressões digitais e
+        espectrometria de massas
+      </h3>
+
+      <p>
+        Investigação da informação química presente
+        em impressões digitais e suas aplicações nas
+        ciências forenses, integrando caracterização
+        molecular e morfológica.
+      </p>
+
+      <span class="research-note">
+        PESQUISA ACADÊMICA
+      </span>
+
+    </article>
+
+  </div>
+
+</section>
+
+<!-- =====================================
+     MEDICINA E TECNOLOGIA
+===================================== -->
+
+<section class="section section-alt" id="tecnologia">
+
+  <div class="wrap">
+
+    <div class="section-heading">
+
+      <p class="eyebrow">
+        04 / MEDICINA × TECNOLOGIA
+      </p>
+
+      <h2>
+        Do dado à<br>
+        <span class="accent">decisão clínica.</span>
+      </h2>
+
+      <p class="section-intro">
+        O encontro entre dados clínicos, biologia molecular
+        e engenharia de software pode abrir novos caminhos
+        para pesquisa e medicina individualizada.
+      </p>
+
+    </div>
+
+    <div class="tech-grid">
+
+      <article>
+        <span class="tech-no">01 / AI</span>
+        <h3>Inteligência Artificial</h3>
+        <p>
+          Modelos computacionais, análise preditiva
+          e ferramentas de apoio à pesquisa e à decisão.
+        </p>
+      </article>
+
+      <article>
+        <span class="tech-no">02 / DNA</span>
+        <h3>Genômica</h3>
+        <p>
+          Informação molecular, fenótipo e medicina
+          de precisão em Oncologia.
+        </p>
+      </article>
+
+      <article>
+        <span class="tech-no">03 / DATA</span>
+        <h3>Ciência de Dados</h3>
+        <p>
+          Estruturação e análise de dados para
+          geração de conhecimento científico.
+        </p>
+      </article>
+
+      <article>
+        <span class="tech-no">04 / ENG</span>
+        <h3>Engenharia de Software</h3>
+        <p>
+          Requisitos, bancos relacionais, programação
+          e interoperabilidade em saúde.
+        </p>
+      </article>
+
+    </div>
+
+    <div class="data-flow">
+      <span>DADOS CLÍNICOS</span>
+      <b>→</b>
+      <span>MODELAGEM</span>
+      <b>→</b>
+      <span>EVIDÊNCIAS</span>
+      <b>→</b>
+      <span>DECISÃO</span>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- =====================================
+     ENGENHARIA E PROJETOS
+===================================== -->
+
+<section class="section wrap" id="projetos">
+
+  <div class="section-heading">
+
+    <p class="eyebrow">
+      05 / ENGENHARIA E PROJETOS
+    </p>
+
+    <h2>
+      Construindo a<br>
+      <span class="accent">próxima interface.</span>
+    </h2>
+
+    <p class="section-intro">
+      Engenharia de Requisitos, modelagem de dados,
+      Python, machine learning e interoperabilidade
+      são áreas de estudo e desenvolvimento contínuo.
+    </p>
+
+  </div>
+
+  <div class="project-panel">
+
+    <div>
+
+      <span class="project-label">
+        REPOSITÓRIO PRINCIPAL / GITHUB
+      </span>
+
+      <h3>Hub Acadêmico &amp; Profissional</h3>
+
+      <p>
+        Um espaço para reunir produção científica,
+        formação médica, engenharia de software e
+        iniciativas tecnológicas. Novos projetos serão
+        apresentados conforme sua documentação e
+        disponibilidade pública.
+      </p>
+
+      <a
+        class="button primary"
+        href="https://github.com/felipedlacerda/Hub-Acad-mico-Profissional"
+        target="_blank"
+        rel="noopener noreferrer">
+        Ver repositório ↗
+      </a>
+
+    </div>
+
+    <div class="project-graphic" aria-hidden="true">
+
+      <span>01</span>
+
+      <div class="code-lines">
+        &lt;research /&gt;<br>
+        &lt;medicine /&gt;<br>
+        &lt;technology /&gt;
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- =====================================
+     FORMAÇÃO COMPLEMENTAR
+===================================== -->
+
+<section class="section section-alt" id="formacao">
+
+  <div class="wrap">
+
+    <div class="section-heading">
+
+      <p class="eyebrow">
+        06 / FORMAÇÃO COMPLEMENTAR
+      </p>
+
+      <h2>
+        Aprendizado<br>
+        <span class="accent">sem fronteiras.</span>
+      </h2>
+
+    </div>
+
+    <div class="education-grid">
+
+      <div>
+
+        <h3>Formação complementar</h3>
+
+        <p>
+          Genômica · ACLS · ATLS · Python (IBM) ·
+          Inteligência Artificial aplicada à saúde
+        </p>
+
+        <small>
+          Consultar README para documentação
+          e situação de cada formação.
+        </small>
+
+      </div>
+
+      <div>
+
+        <h3>Engenharia de Software</h3>
+
+        <p>
+          Graduação em andamento, com foco em lógica,
+          requisitos, modelagem de dados e desenvolvimento.
+        </p>
+
+        <small>FORMAÇÃO EM ANDAMENTO</small>
+
+      </div>
+
+      <div>
+
+        <h3>Idiomas</h3>
+
+        <p>
+          Português — nativo<br>
+          Inglês — avançado<br>
+          Mandarim — em desenvolvimento
+        </p>
+
+        <small>COMUNICAÇÃO GLOBAL</small>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- =====================================
+     CONTATO
+===================================== -->
+
+<section class="section contact wrap" id="contato">
+
+  <p class="eyebrow">
+    07 / CONEXÕES
+  </p>
+
+  <h2>
+    O futuro é<br>
+    <span class="accent">interdisciplinar.</span>
+  </h2>
+
+  <p>
+    O objetivo permanece humano: utilizar ciência
+    e inovação para produzir impacto real no cuidado
+    das pessoas.
+  </p>
+
+  <a
+    class="button primary"
+    href="https://github.com/felipedlacerda/Hub-Acad-mico-Profissional"
+    target="_blank"
+    rel="noopener noreferrer">
+    Visitar repositório no GitHub ↗
+  </a>
+
+  <div class="closing-line">
+    PESSOAS <span>→</span>
+    CIÊNCIA <span>→</span>
+    DADOS <span>→</span>
+    DECISÃO <span>→</span>
+    IMPACTO
+  </div>
+
+</section>
+
 </main>
 
-<footer>
-  <div class="container">
-    <p class="motto">PESSOAS → CIÊNCIA → DADOS → DECISÃO → IMPACTO</p>
-    <p class="muted">Felipe de Lacerda Pereira · Brasília, Brasil</p>
-    <p class="muted">Medicina × Ciência × Tecnologia</p>
+<!-- =====================================
+     FOOTER
+===================================== -->
+
+<footer class="footer">
+
+  <div class="wrap footer-inner">
+
+    <span>
+      © <span id="year">2026</span>
+      FELIPE DE LACERDA PEREIRA
+    </span>
+
+    <span>
+      MEDICINA × CIÊNCIA × TECNOLOGIA
+    </span>
+
+    <a href="#inicio">
+      VOLTAR AO TOPO ↑
+    </a>
+
   </div>
+
 </footer>
 
+<!-- =====================================
+     JAVASCRIPT FUNCIONAL
+===================================== -->
+
 <script>
-document.querySelectorAll(".menu-mobile .links a").forEach(link => {
-  link.addEventListener("click", () => {
-    document.querySelector(".menu-mobile").open = false;
+"use strict";
+
+/* MENU MOBILE */
+
+const menuDetails =
+  document.querySelector(".mobile-navigation");
+
+if (menuDetails) {
+
+  const summary =
+    menuDetails.querySelector("summary");
+
+  /* Fechar ao clicar em um link */
+
+  menuDetails
+    .querySelectorAll("nav a")
+    .forEach(link => {
+
+      link.addEventListener("click", () => {
+        menuDetails.open = false;
+      });
+
+    });
+
+  /* Fechar com Escape */
+
+  document.addEventListener("keydown", event => {
+
+    if (
+      event.key === "Escape" &&
+      menuDetails.open
+    ) {
+      menuDetails.open = false;
+      summary.focus();
+    }
+
   });
-});
-document.addEventListener("keydown", event => {
-  if (event.key === "Escape") {
-    document.querySelector(".menu-mobile").open = false;
+
+  /* Fechar ao clicar fora */
+
+  document.addEventListener("click", event => {
+
+    if (
+      menuDetails.open &&
+      !menuDetails.contains(event.target)
+    ) {
+      menuDetails.open = false;
+    }
+
+  });
+
+  /* Fechar ao voltar para desktop */
+
+  const desktopQuery =
+    window.matchMedia("(min-width: 761px)");
+
+  function handleDesktop(event) {
+    if (event.matches) {
+      menuDetails.open = false;
+    }
   }
-});
+
+  desktopQuery.addEventListener(
+    "change",
+    handleDesktop
+  );
+
+}
+
+/* ANO AUTOMÁTICO */
+
+const yearElement =
+  document.getElementById("year");
+
+if (yearElement) {
+  yearElement.textContent =
+    new Date().getFullYear();
+}
 </script>
+
 </body>
 </html>
