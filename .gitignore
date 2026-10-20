@@ -1,0 +1,23 @@
+# Arquivos de sistema e SO (Android/Termux/Linux/macOS/Windows)
+.DS_Store
+Thumbs.db
+*.tmp
+*.log
+.termux/
+
+# Arquivos de ambiente, credenciais e segredos
+.env
+.env.local
+*.pem
+*.key
+*.pfx
+
+# IDEs e Editores de Código
+.vscode/
+.idea/
+*.swp
+
+# Dependências e Builds
+node_modules/
+dist/
+build/
