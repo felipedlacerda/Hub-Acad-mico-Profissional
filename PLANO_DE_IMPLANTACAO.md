@@ -15,7 +15,7 @@
 | **Etapa 1** | Planejamento e Configuração do Gemini | Concluído | Google Gemini / Termux |
 | **Etapa 2** | Configuração Inicial e Integração GitHub | Concluído | Git / GitHub / GitHub Pages |
 | **Etapa 3** | Gestão de Usuários e Segurança (DevSecOps) | Concluído | Dependabot / Secret Scanning / .gitignore |
-| **Etapa 4** | Compartilhamento e Controle de Acesso | Concluído | GitHub Rulesets / CONTRIBUTING.md |
+| **Etapa 4** | Compartilhamento e Controle de Acesso | Concluído | Branch Protection Rules / CONTRIBUTING.md |
 | **Etapa 5** | Finalização da Integração e Testes | Concluído | Matriz de Testes (Google Sheets) |
 | **Etapa 6** | Revisão Final e Apresentação | Concluído | YouTube / Google Docs / PDF Final |
 
